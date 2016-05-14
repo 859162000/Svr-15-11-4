@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="842" name="藏宝者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="10211">
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="5"/>
+				<level type="Great" value="14"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("收集藏宝图(2)", "Dialog11")
+this:AddDialogItem("领取新手装备(2)", "Dialog15")
+end
+function Dialog11()
+this:AddTalk("    我珍藏多年的藏宝图给那些顽皮的动物撕碎了，一定要把那些碎片收集回来，让其他人看到就糟了。\n    藏宝图一共有5块，如果能集齐全部，我愿意拿出88两88文来报答你。")
+this:AddTaskCmdItem("交出藏宝图+88两88文{10001}", "v842", 4, 3)
+end
+function Dialog15()
+this:AddTalk("    你是来领勇士装备的啊，这就是，那去吧。")
+this:AddTaskCmdItem("收下装备{10001}", "v842", 5, 3)
+end
+</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Differ" name="state" value="1" id="5"/>
+				<var type="Differ" name="state" value="-1" id="4"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("收集藏宝图(2)", "Dialog19")
+end
+function Dialog19()
+this:AddTalk("    我珍藏多年的藏宝图给那些顽皮的动物撕碎了，一定要把那些碎片收集回来，让其他人看到就糟了。\n    藏宝图一共有5块，如果能集齐全部，我愿意拿出88两88文来报答你。")
+this:AddTaskCmdItem("交出藏宝图+88两88文{10001}", "v842", 4, 3)
+end
+</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="4" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<item value="1" id="2237"/>
+				<item value="1" id="2238"/>
+				<item value="1" id="2239"/>
+				<item value="1" id="2240"/>
+				<item value="1" id="2241"/>
+				<var type="Differ" name="state" value="-1"/>
+			</conditions>
+			<actions>
+				<notify1 content="得到88两88文报酬"/>
+				<gold type="Add" value="8888"/>
+				<removeitem value="1" id="2237"/>
+				<removeitem value="1" id="2238"/>
+				<removeitem value="1" id="2239"/>
+				<removeitem value="1" id="2240"/>
+				<removeitem value="1" id="2241"/>
+				<var type="Set" name="state" value="-1"/>
+				<refresh name="state"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="5" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+				<level type="Great" value="14"/>
+				<var type="Differ" name="state" value="-1"/>
+			</conditions>
+			<actions>
+				<notify1 content="得到勇士装备"/>
+				<addbinditem value="1" id="30002"/>
+				<addbinditem value="1" id="30004"/>
+				<addbinditem value="1" id="30012"/>
+				<addbinditem value="1" id="30022"/>
+				<addbinditem value="1" id="30032"/>
+				<addbinditem value="1" id="30032"/>
+				<addbinditem value="1" id="30042"/>
+				<var type="Set" name="state" value="-1"/>
+				<refresh name="state"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

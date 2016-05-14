@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域 512 -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家  512国战传送区-->
+	<waypoint>
+		<point x="43" y="167"/>
+		<point x="44" y="167"/>
+		<point x="45" y="167"/>
+		<point x="46" y="167"/>
+		<point x="43" y="168"/>
+		<point x="44" y="168"/>
+		<point x="45" y="168"/>
+		<point x="46" y="168"/>
+		<point x="42" y="169"/>
+		<point x="43" y="169"/>
+		<point x="44" y="169"/>
+		<point x="45" y="169"/>
+		<dest name="jixie9" country="6" x="130" y="186"/>
+		<dest name="jixie9" country="6" x="131" y="186"/>
+		<dest name="jixie9" country="6" x="132" y="186"/>
+		<dest name="jixie9" country="6" x="133" y="186"/>
+		<dest name="jixie9" country="6" x="130" y="187"/>
+		<dest name="jixie9" country="6" x="131" y="187"/>
+		<dest name="jixie9" country="6" x="132" y="187"/>
+		<dest name="jixie9" country="6" x="133" y="187"/>
+		<dest name="jixie9" country="6" x="129" y="188"/>
+		<dest name="jixie9" country="6" x="130" y="188"/>
+		<dest name="jixie9" country="6" x="131" y="188"/>
+		<dest name="jixie9" country="6" x="132" y="188"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<npc id="10255" name="特级工匠" width="38" height="51" x="78" y="83" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10256" name="精铜魔卫" width="7" height="10" x="158" y="122" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10257" name="精铜魔卫" width="7" height="10" x="70" y="30" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10257" name="精铜魔卫" width="7" height="10" x="95" y="69" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10257" name="精铜魔卫" width="7" height="10" x="130" y="104" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10257" name="精铜魔卫" width="7" height="10" x="153" y="78" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10256" name="精铜魔卫" width="7" height="10" x="121" y="43" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10257" name="精铜魔卫" width="7" height="10" x="118" y="58" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="10256" name="精铜魔卫" width="7" height="10" x="140" y="84" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="30028" name="钢化巨灵" width="20" height="34" x="129" y="45" num="1" interval="10800" color="0,255,0,0"/>
+	<npc id="10258" name="特级工匠" width="26" height="42" x="65" y="5" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10259" name="特级工匠" width="26" height="42" x="157" y="103" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10260" name="特级工匠" width="125" height="104" x="61" y="2" num="45" interval="60" color="0,255,0,0"/>
+	<npc id="10260" name="特级工匠" width="80" height="131" x="106" y="5" num="45" interval="60" color="0,255,0,0"/>
+	<npc id="10249" name="特级工匠" width="26" height="42" x="8" y="68" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10254" name="特级工匠" width="26" height="42" x="97" y="163" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10253" name="特级工匠" width="26" height="42" x="67" y="139" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10252" name="特级工匠" width="26" height="42" x="34" y="100" num="45" interval="30" color="0,255,0,0"/>
+	<npc id="10254" name="特级工匠" width="44" height="101" x="14" y="41" num="25" interval="60" color="0,255,0,0"/>
+	<npc id="10249" name="特级工匠" width="81" height="58" x="71" y="141" num="25" interval="60" color="0,255,0,0"/>
+	<npc id="10251" name="特级工匠" width="44" height="101" x="10" y="43" num="25" interval="60" color="0,255,0,0"/>
+	<npc id="10250" name="特级工匠" width="44" height="101" x="12" y="38" num="70" interval="70" color="0,255,0,0"/>
+	<npc id="10251" name="特级工匠" width="81" height="58" x="72" y="144" num="25" interval="60" color="0,255,0,0"/>
+	<npc id="10250" name="特级工匠" width="81" height="58" x="68" y="145" num="75" interval="70" color="0,255,0,0"/>
+	<npc id="10250" name="特级工匠" width="62" height="75" x="74" y="61" num="80" interval="70" color="0,255,0,0"/>
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="21" height="40" x="35" y="147" type="1" color="0,0,255,0"/>
+</map>

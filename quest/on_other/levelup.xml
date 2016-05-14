@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v04 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="3" name="等级">
+	<!--new means new quest, default is quest on user-->
+	<quest id="150000">
+		<embranchment id="2">
+			<conditions>
+				<level type="Great" value="1"/>
+				<level type="Less" value="10"/>
+				<var type="Differ" name="state" value="-1" id="20"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升级了，请别忘记通过人物属性界面“C”和技能界面“V”来分配您的属性点和技能点，这对您将来练级和做任务会大有帮助的。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify content="请别忘记通过人物属性界面“C”和技能界面“V”来分配您的属性点和技能点"/>
+				<var type="Set" name="state" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<level type="Equal" value="8"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您到8级了，您可以在10级的时候离开清源村去凤凰城进行更多的探险。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<level type="Equal" value="10"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="100"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升级了，最后一次提醒您请别忘记通过人物属性界面“C”和技能界面“V”来分配您的属性点和技能点。\n\n    经过这段时间的锻炼，你已经可以离开清源村了，希望你在凤凰城里能过的愉快。\n\n    您还可以花20两在饲养员处购买一匹马，这会大大提高您的移动速度。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify content="你已经可以离开清源村了，希望你在凤凰城里能过的愉快。"/>
+				<notify1 content="可以离开清源村了"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<level type="Equal" value="11"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤凰城的颜梦梦（310，521）似乎有事情想找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="110"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<level type="Equal" value="12"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤凰城的李大壮（290，579）似乎有事情想找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="120"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+				<level type="Equal" value="13"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤凰城的齐飞（342，391）最近表现很不正常，似乎有什么心事。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="130"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<level type="Equal" value="14"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤凰城的牛二（422，301）最近很愤怒，走近他的时候千万要小心。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="140"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<level type="Equal" value="15"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="150"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了15级，在您20级以后，可以到凤凰城的风水先生处选择您的人物五行属性，这能大大提高您练级效率。\n\n 小道消息：听说凤凰城的李员外（415，473）儿子丢了，也不知是真是假。 ")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<level type="Equal" value="16"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤凰城的齐飞（342，391）最近似乎特别兴奋，可能是吃错药了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="160"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<level type="Equal" value="17"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="170"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：听说凤凰城的炼药师洪老汉（409，499）又要开始炼什么奇怪的东西了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<level type="Equal" value="18"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="180"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：听说凤凰城的渔夫当街大哭呢，大男人象什么样子。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+				<level type="Equal" value="19"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk(" 小道消息：听说凤凰城的李员外（415，473）儿子有消息了，不过好象对头挺难惹。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="level" value="190"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20">
+			<conditions>
+				<level type="Equal" value="20"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了20级，您可以到凤凰城的风水先生处选择您的五行属性。\n\n小道消息：听说雷老虎想到凤凰城里比武招亲呢。\n\n适合练级地点： 百兽谷。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify1 content="凤凰城-风水先生"/>
+				<notify content="请去凤凰城风水先生处选择人物五行"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<level type="Equal" value="22"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了22级，您到25级以后就可以通过边境的边防官跨国旅行了。\n    边境的路径是：凤凰城 - 百兽谷 - 东郊 - 边境。\n\n 小道消息：衙役那里似乎有了雷小姐的消息。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="23">
+			<conditions>
+				<level type="Equal" value="23"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了23级，您到25级以后就可以使用系统提供的国聊功能了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<level type="Equal" value="24"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：听说城里那头黑豹偶尔会说人话，也不知是真是假。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<level type="Equal" value="25"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到25级了，您现在可以使用国聊系统了。\n    凤凰城的姜小鱼好象有什么心事。\n    如果您有兴趣领略异域风光的话，还可以通过边境的边防官到其他国家探险。\n    边境的路径是：凤凰城 - 东郊 - 边境。\n\n适合练级地点： 兽王谷。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify content="您现在可以使用国聊系统了，可以跨国了"/>
+				<notify1 content="可以使用国聊"/>
+				<notify1 content="可以跨国"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<level type="Equal" value="26"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：听说齐飞最近又准备干傻事了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="28">
+			<conditions>
+				<level type="Equal" value="28"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>。
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：齐飞最近开始疯狂的读书，也不知能坚持几天。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="29">
+			<conditions>
+				<level type="Equal" value="29"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    凤凰城的姜小鱼正在招募打虎英雄。\n\n小道消息：凤凰城的姜小鱼最近正在四处招募英雄，说是要去百兽谷打狼。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="30">
+			<conditions>
+				<level type="Equal" value="30"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了30级，您35级的时候可以找民政官申请成立家族。\n    如果您厌倦了步行，可以去找枣红马饲养员用20两购买一匹枣红马哦。\n\n小道消息：因为山贼的原因，凤尾村出现了大量的难民，真是可怜啊。\n\n适合练级地点： 山寨前哨。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify1 content="凤凰城-大臣申请帮会"/>
+				<notify content="可以到凤凰城的大臣处申请建立帮会了"/>
+			</actions>
+		</embranchment>
+		<embranchment id="33">
+			<conditions>
+				<level type="Equal" value="33"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    姜小鱼开始招募打虎英雄，不知道他又想做什么大事。\n\n小道消息：凤凰城的富不仁最近正在召集勇士，他似乎又想做什么大买卖了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<level type="Equal" value="35"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了35级，您可以找民政官去申请成立家族了。\n\n适合练级地点： 龙冈山寨一层、龙冈山寨二层。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<level type="Equal" value="36"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤尾村的难民似乎想找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="37">
+			<conditions>
+				<level type="Equal" value="37"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    姜小鱼又开始招募打豹英雄了！这个姜小鱼真是忙的很啊。\n\n小道消息：凤凰城的姜小鱼最近又在招募勇士了。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="39">
+			<conditions>
+				<level type="Equal" value="39"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤尾村的副官似乎在招募勇士。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="40">
+			<conditions>
+				<level type="Equal" value="40"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了40级，您可以到凤尾村的风水先生处继续升级您的五行属性。\n    您如果有意中人的话可以去找民政官申请结婚。\n\n适合练级地点： 龙冈山寨三层、龙冈山寨四层、东郊。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify1 content="凤尾村-风水先生"/>
+				<notify content="请去凤尾村风水先生处升级人物五行"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41">
+			<conditions>
+				<level type="Equal" value="41"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：爱管事的姜小鱼要替算命先生上山寨讨要公道。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<level type="Equal" value="42"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：凤尾村的副官似乎在招募勇士。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="45">
+			<conditions>
+				<level type="Equal" value="45"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了45级，您可以找大臣成立帮会了。\n    姜小鱼了解到山贼想抢劫凤尾村，他正在组织勇士前去破坏山寨。\n\n适合练级地点： 东郊、南郊、白骨洞。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+				<notify1 content="凤尾村-风水先生"/>
+				<notify content="请去凤尾村风水先生处升级人物五行"/>
+			</actions>
+		</embranchment>
+		<embranchment id="46">
+			<conditions>
+				<level type="Equal" value="46"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：王城的羽林将军似乎在招募勇士。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="49">
+			<conditions>
+				<level type="Equal" value="49"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：最近王城的葫铁花似乎有什么事情。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="50">
+			<conditions>
+				<level type="Equal" value="50"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：王城的刘婆婆似乎在找儿子。\n\n适合练级地点： 东郊、南郊、白骨洞。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="53">
+			<conditions>
+				<level type="Equal" value="53"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：王城的葫铁花好象很着急，不知道发生了什么事。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="54">
+			<conditions>
+				<level type="Equal" value="54"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：王城的慎篱似乎在找帮手。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		<embranchment id="55">
+			<conditions>
+				<level type="Equal" value="55"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("适合练级地点： 白骨洞四层，精怪洞穴。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="57">
+			<conditions>
+				<level type="Equal" value="57"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("小道消息：王城的葫铁花似乎在找帮手。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		
+		<embranchment id="60">
+			<conditions>
+				<level type="Equal" value="60"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    恭喜您升到了60级。\n\n适合练级地点：白骨洞六层，精怪洞穴、北郊、凤翔镇。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="61">
+			<conditions>
+				<level type="Equal" value="61"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花正在四处找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="65">
+			<conditions>
+				<level type="Equal" value="65"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("适合练级地点：白骨洞八层，精怪洞穴四层、北郊、凤翔镇、凤翔镇西郊。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="69">
+			<conditions>
+				<level type="Equal" value="69"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在为千江镇的事担心。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+		<embranchment id="70">
+			<conditions>
+				<level type="Equal" value="70"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("适合练级地点：白骨洞八层，精怪洞穴六层、北郊、凤翔镇西郊。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="73">
+			<conditions>
+				<level type="Equal" value="73"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花似乎正在招募勇士。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+		
+		<embranchment id="75">
+			<conditions>
+				<level type="Equal" value="75"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("适合练级地点：精怪洞穴八层、凤翔镇西郊。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>
+		
+		<embranchment id="77">
+			<conditions>
+				<level type="Equal" value="77"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花最近好象非常愤怒。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>		
+		
+		<embranchment id="81">
+			<conditions>
+				<level type="Equal" value="81"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花最近好象非常愤怒。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+		<embranchment id="85">
+			<conditions>
+				<level type="Equal" value="85"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在找什么人。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>		
+		
+		<embranchment id="89">
+			<conditions>
+				<level type="Equal" value="89"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在找什么人。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+				<embranchment id="93">
+			<conditions>
+				<level type="Equal" value="93"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在找什么人。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+		<embranchment id="97">
+			<conditions>
+				<level type="Equal" value="97"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在找什么人。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+		</embranchment>	
+		
+	   <embranchment id="101">
+			<conditions>
+				<level type="Equal" value="101"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：王城的葫铁花好象在找什么人。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>		
+		
+   	   <embranchment id="105">
+			<conditions>
+				<level type="Equal" value="105"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>	
+	  
+	    <embranchment id="109">
+			<conditions>
+				<level type="Equal" value="109"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>	
+	  
+	  	<embranchment id="113">
+			<conditions>
+				<level type="Equal" value="113"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  <embranchment id="117">
+			<conditions>
+				<level type="Equal" value="117"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  	  <embranchment id="121">
+			<conditions>
+				<level type="Equal" value="121"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+		  	  <embranchment id="125">
+			<conditions>
+				<level type="Equal" value="125"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  <embranchment id="129">
+			<conditions>
+				<level type="Equal" value="129"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  <embranchment id="133">
+			<conditions>
+				<level type="Equal" value="133"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  <embranchment id="137">
+			<conditions>
+				<level type="Equal" value="137"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  
+	  	  <embranchment id="141">
+			<conditions>
+				<level type="Equal" value="141"/>
+				<var type="Differ" name="state" value="-1" id="150000"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    小道消息：皇城的燕北飞似乎在找人帮忙。")
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+				</mainmenu>
+			</actions>
+	  </embranchment>
+	  	
+	</quest>
+	<quest id="150001" new="1">
+		<embranchment id="2">
+			<conditions>
+				<level type="Great" value="1"/>
+				<level type="Less" value="21"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+3"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<level type="Great" value="20"/>
+				<level type="Less" value="41"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+4"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="40"/>
+				<level type="Less" value="61"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+5"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<level type="Great" value="60"/>
+				<level type="Less" value="81"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+6"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<level type="Great" value="80"/>
+				<level type="Less" value="101"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+7"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<level type="Great" value="100"/>
+				<level type="Less" value="121"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+8"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9">
+			<conditions>
+				<level type="Great" value="120"/>
+				<level type="Less" value="141"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+9"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<level type="Great" value="140"/>
+				<level type="Less" value="161"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+10"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<level type="Great" value="160"/>
+				<level type="Less" value="181"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+11"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<level type="Great" value="180"/>
+				<level type="Less" value="201"/>
+			</conditions>
+			<actions>
+				<notify1 content="恭喜你升级了！"/>
+				<notify1 content="人物属性+12"/>
+				<notify1 content="技能点+1"/>
+				<notify1 content="生命上限+15"/>
+				<notify1 content="魔法上限+1"/>
+				<var type="Set" name="state" value="1" id="150001"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

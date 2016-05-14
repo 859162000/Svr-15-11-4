@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--所有各种服务器参数-->
+<Zebra>
+	<global>
+		<!-- Specify the log level[debug,info,warning,error,fatal,always]. -->
+		<log>debug</log>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<!--mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<!--mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql-->
+		<!-- Use the specified local network device. -->
+		<ifname>eth0</ifname>
+		<!-- Connected to the specified supserserver, property 'port' default value is 10000. -->
+		<superserver port="10001">222.169.230.73</superserver>
+		<!--superserver port="10001">192.168.2.199</superserver-->
+		<!--superserver port="100010">222.169.230.73</superserver-->
+		<gm_mode>true</gm_mode>
+	</global>
+	<SuperServer>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<!--InfoServer port="9903">222.169.230.73</InfoServer-->
+		<logfilename>/home/whj/tmp/superserver.log</logfilename>
+		<InfoServer port="9903">222.169.230.73</InfoServer>
+	</SuperServer>
+	<LoginServer>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<logfilename>/home/whj/tmp/loginserver.log</logfilename>
+	</LoginServer>
+	<RecordServer>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<!--mysql>mysql://Zebra:Zebra@222.169.230.73:3306/RecordServer</mysql-->
+		<logfilename>/home/whj/tmp/recordserver.log</logfilename>
+	</RecordServer>
+	<AccountServer>
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<logfilename>/home/whj/tmp/accountserver.log</logfilename>
+	</AccountServer>
+	<SessionServer>
+		<offlineMsgPath>/home/whj/temp</offlineMsgPath>
+		<logfilename>/home/whj/tmp/sessionserver.log</logfilename>
+	</SessionServer>
+	<FLServer>
+		<!-- 网关最大连接数量 0表示无限制 -->
+		<maxGatewayUser>1024</maxGatewayUser>
+		<!-- Specify the log filename. -->
+		<logfilename>/home/whj/tmp/flserver.log</logfilename>
+		<!-- 统一用户平台用户管理服务器的列表文件 -->
+		<dbAccessServerListFile>FLServer/dbAccessServerList.xml</dbAccessServerListFile>
+		<!-- 服务器信息采集的服务器地址 -->
+		<!--InfoServer port="9903">222.169.230.73</InfoServer-->
+		<!--MySQL database connection[mysql://user:passwd@host:port/dbName]-->
+		<mysql>mysql://zebra1:zebra1@222.169.230.73:3306/zebra1</mysql>
+		<!-- 如果要编码mysql连接字符串请使用工具，配置如下面的例子
+		<mysql encode="yes">lmOf.1kySwS0a09j11xyCdI1ySujl1hnCvT0hDitT0hjzv00gzSv00gDSw91tS9fE1</mysql>
+		-->
+		<!-- 区信息列表文件 -->
+		<zoneInfoFile>FLServer/zoneInfo.xml</zoneInfoFile>
+		<!-- 客户端登陆端口，外部使用 -->
+		<login_port>7000</login_port>
+		<!-- 内部使用端口，用于服务器之间数据传输 -->
+		<inside_port>7005</inside_port>
+		<!-- 客户端PING端口，外部使用 -->
+		<ping_port>7004</ping_port>
+		<!-- 是否验证图形验证码 -->
+		<jpeg_passport>0</jpeg_passport>
+	</FLServer>
+	<ScenesServer>
+		<sceneinfofile>ScenesServer/scenesinfo.xml</sceneinfofile>
+		<npctradefile>ScenesServer/npctrade.xml</npctradefile>
+		<messageSystemFile>ScenesServer/messageSystem.xml</messageSystemFile>
+		<charinitinfoFile>ScenesServer/initcharinfo.xml</charinitinfoFile>
+		<magicrangefile>ScenesServer/magicrangefile.xml</magicrangefile>
+		<!--回写档案平率(单位是秒) -->
+		<writebacktimer>600</writebacktimer>
+		<mapdir>map/</mapdir>
+		<tbldir>map/</tbldir>
+		<logfilename>/home/whj/tmp/sceneserver.log</logfilename>
+	</ScenesServer>
+	<GatewayServer>
+		<!-- 国家排序方式 0:不排序 , 1:在线人数排序 , 2:注册人数排序 -->
+		<countryorder>1</countryorder>
+		<sceneinfofile>ScenesServer/scenesinfo.xml</sceneinfofile>
+		<logfilename>/home/whj/tmp/gatewayserver.log</logfilename>
+		<forbidWordsFile>GatewayServer/forbidWords</forbidWordsFile>
+		<rolereg_verify>0</rolereg_verify>
+	</GatewayServer>
+</Zebra>

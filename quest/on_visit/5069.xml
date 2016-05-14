@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="5069" name="魏国使者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960108">
+		<!--<embranchment id="2">
+			<conditions>
+				<nation value="2"/> 
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回宋国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>-->
+		<embranchment id="3">
+			<conditions>
+				<nation value="3"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回魏国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!--<embranchment id="4">
+			<conditions>
+				<nation value="4"/> 
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回齐国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 4)
+end
+				</menu>
+			</actions>
+		</embranchment>				
+		
+		
+		<embranchment id="5">
+			<conditions>
+				<nation value="5"/> 
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回燕国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 5)
+end
+				</menu>
+			</actions>
+		</embranchment>			
+		
+		
+		<embranchment id="7">
+			<conditions>
+				<nation value="7"/> 
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回唐国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 7)
+end
+				</menu>
+			</actions>
+		</embranchment>				
+
+
+		<embranchment id="8">
+			<conditions>
+				<nation value="8"/> 
+				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回汉国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 8)
+end
+				</menu>
+			</actions>
+		</embranchment>		
+
+		<embranchment id="9">
+			<conditions>
+				<nation value="9"/> 
+				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回吴国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>		
+		
+		<embranchment id="10">
+			<conditions>
+				<nation value="10"/> 
+				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回赵国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>	
+
+
+		<embranchment id="11">
+			<conditions>
+				<nation value="11"/> 
+				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回周国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>	
+
+
+		<embranchment id="12">
+			<conditions>
+				<nation value="12"/> 
+				
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    是否想回楚国王城？")
+this:AddTaskCmdItem("回国(0)", "v5069", 160108, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>	-->
+
+
+
+		<!--<embranchment id="21">
+			<conditions>
+				<gold type="Less" value="500"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    对不起，你的钱不够，请凑够5两再来。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>-->
+	</quest>
+	<quest id="160108" new="1">
+		<embranchment id="2" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="宋国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="魏国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="齐国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="燕国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="唐国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="汉国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="吴国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="赵国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="周国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<isguard/>
+			</conditions>
+			<actions>
+				<goto name="楚国·王城" pos="812,419"/>
+				<notify content="你回到了王城"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

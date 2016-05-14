@@ -1,0 +1,3289 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="520" name="边境-梁镖头(365,180)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="31005">
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="gold" value="60" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="2" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="gold" value="60" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 2)
+end   
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<var type="Equal" name="gold" value="75" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="2" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Equal" name="gold" value="75" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<var type="Equal" name="gold" value="90" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="2" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<var type="Equal" name="gold" value="90" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="32">
+			<conditions>
+				<var type="Equal" name="gold" value="105" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="2" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<var type="Equal" name="gold" value="105" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<var type="Equal" name="gold" value="120" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="2" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="44">
+			<conditions>
+				<var type="Equal" name="gold" value="120" id="21005"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Equal" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<var type="Equal" name="gold" value="60" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="2" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<var type="Equal" name="gold" value="60" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<var type="Equal" name="gold" value="75" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="2" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<var type="Equal" name="gold" value="75" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="122">
+			<conditions>
+				<var type="Equal" name="gold" value="90" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="2" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<var type="Equal" name="gold" value="90" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="132">
+			<conditions>
+				<var type="Equal" name="gold" value="105" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="2" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="134">
+			<conditions>
+				<var type="Equal" name="gold" value="105" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="142">
+			<conditions>
+				<var type="Equal" name="gold" value="120" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="2" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="144">
+			<conditions>
+				<var type="Equal" name="gold" value="120" id="21025"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Equal" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="300">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21005, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="301">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21025, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!--	<embranchment id="388">
+			<conditions>
+				<timeouts long="6" id="21005" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="389">
+			<conditions>
+				<timeouts long="6" id="21025" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>-->
+
+
+		<embranchment id="400">
+			<conditions>
+                               <grade value="4"/>
+				<var type="Equal" name="state" value="-3" id="21030"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到贵家族保的镖车了，谢谢你们，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21030, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+		<embranchment id="401">
+			<conditions>
+                                <grade value="4"/>
+				<var type="Equal" name="state" value="1" id="21030"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    怎么回事？你们家族保的镖还没到啊。是不小心把镖丢了吗？\n    如果你无法交任务，就去王城龙镖头(759,488)处注销该任务吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+		<embranchment id="402">
+			<conditions>
+                                <grade value="4"/>
+				<var type="Equal" name="state" value="2" id="21030"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    怎么回事？你们家族保的镖还没到啊。是不小心把镖丢了吗？\n    如果你无法交任务，就去王城龙镖头(759,488)处注销该任务吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+	</quest>
+	<quest id="21005" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="60两押金退还了"/>
+				<gold type="Add" value="6000"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你30两押金"/>
+				<gold type="Add" value="3000"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Differ" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="75两押金退还了"/>
+				<gold type="Add" value="7500"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你38两押金"/>
+				<gold type="Add" value="3800"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Differ" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="90两押金退还了"/>
+				<gold type="Add" value="9000"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你45两押金"/>
+				<gold type="Add" value="4500"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Differ" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="1锭5两押金退还了"/>
+				<gold type="Add" value="10500"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你53两押金"/>
+				<gold type="Add" value="5300"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+				<var type="Differ" name="time" value="1" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="1锭20两押金退还了"/>
+				<gold type="Add" value="12000"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21005"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你60两押金"/>
+				<gold type="Add" value="6000"/>
+				<exp value="100" id="21005" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21025" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="60两押金退还了"/>
+				<gold type="Add" value="6000"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你30两押金"/>
+				<gold type="Add" value="3000"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Differ" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="75两押金退还了"/>
+				<gold type="Add" value="7500"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你38两押金"/>
+				<gold type="Add" value="3800"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Differ" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="90两押金退还了"/>
+				<gold type="Add" value="9000"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你45两押金"/>
+				<gold type="Add" value="4500"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Differ" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="1锭5两押金退还了"/>
+				<gold type="Add" value="10500"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你53两押金"/>
+				<gold type="Add" value="5300"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+				<var type="Differ" name="time" value="1" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="1锭20两押金退还了"/>
+				<gold type="Add" value="12000"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21025"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你60两押金"/>
+				<gold type="Add" value="6000"/>
+				<exp value="100" id="21025" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="31006">
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="gold" value="100" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="2" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="gold" value="100" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<var type="Equal" name="gold" value="125" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="2" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Equal" name="gold" value="125" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<var type="Equal" name="gold" value="150" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="2" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<var type="Equal" name="gold" value="150" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="32">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="2" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<var type="Equal" name="gold" value="200" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="2" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="44">
+			<conditions>
+				<var type="Equal" name="gold" value="200" id="21006"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Equal" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<var type="Equal" name="gold" value="100" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="2" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<var type="Equal" name="gold" value="100" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<var type="Equal" name="gold" value="125" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="2" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<var type="Equal" name="gold" value="125" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="122">
+			<conditions>
+				<var type="Equal" name="gold" value="150" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="2" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<var type="Equal" name="gold" value="150" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="132">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="2" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="134">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="142">
+			<conditions>
+				<var type="Equal" name="gold" value="200" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="2" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="144">
+			<conditions>
+				<var type="Equal" name="gold" value="200" id="21026"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Equal" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="300">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21006, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="301">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21026, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!--        	<embranchment id="608">
+			<conditions>
+				<timeouts long="6" id="21006" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="609">
+			<conditions>
+				<timeouts long="6" id="21026" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment> -->
+	</quest>
+	<quest id="21006" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="1锭押金退还了"/>
+				<gold type="Add" value="10000"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你50两押金"/>
+				<gold type="Add" value="5000"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Differ" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="1锭25两押金退还了"/>
+				<gold type="Add" value="12500"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你63两押金"/>
+				<gold type="Add" value="6300"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Differ" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="1锭50两押金退还了"/>
+				<gold type="Add" value="15000"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你75两押金"/>
+				<gold type="Add" value="7500"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Differ" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="1锭75两押金退还了"/>
+				<gold type="Add" value="17500"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你88两押金"/>
+				<gold type="Add" value="8800"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+				<var type="Differ" name="time" value="1" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="2锭押金退还了"/>
+				<gold type="Add" value="20000"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21006"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭押金"/>
+				<gold type="Add" value="10000"/>
+				<exp value="100" id="21006" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21026" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="1锭押金退还了"/>
+				<gold type="Add" value="10000"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你50两押金"/>
+				<gold type="Add" value="5000"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Differ" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="1锭25两押金退还了"/>
+				<gold type="Add" value="12500"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你63两押金"/>
+				<gold type="Add" value="6300"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Differ" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="1锭50两押金退还了"/>
+				<gold type="Add" value="15000"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你75两押金"/>
+				<gold type="Add" value="7500"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Differ" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="1锭75两押金退还了"/>
+				<gold type="Add" value="17500"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你88两押金"/>
+				<gold type="Add" value="8800"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+				<var type="Differ" name="time" value="1" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="2锭押金退还了"/>
+				<gold type="Add" value="20000"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21026"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭押金"/>
+				<gold type="Add" value="10000"/>
+				<exp value="100" id="21026" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="31007">
+		<embranchment id="6">
+			<conditions>
+				<var type="Equal" name="gold" value="140" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="2" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="gold" value="140" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="2" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<var type="Equal" name="gold" value="210" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="2" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<var type="Equal" name="gold" value="210" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<var type="Equal" name="gold" value="245" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="2" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<var type="Equal" name="gold" value="245" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="46">
+			<conditions>
+				<var type="Equal" name="gold" value="280" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="2" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="44">
+			<conditions>
+				<var type="Equal" name="gold" value="280" id="21007"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Equal" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="106">
+			<conditions>
+				<var type="Equal" name="gold" value="140" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="2" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<var type="Equal" name="gold" value="140" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="116">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="2" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<var type="Equal" name="gold" value="175" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="126">
+			<conditions>
+				<var type="Equal" name="gold" value="210" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="2" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<var type="Equal" name="gold" value="210" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="136">
+			<conditions>
+				<var type="Equal" name="gold" value="245" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="2" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="134">
+			<conditions>
+				<var type="Equal" name="gold" value="245" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="146">
+			<conditions>
+				<var type="Equal" name="gold" value="280" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="2" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="144">
+			<conditions>
+				<var type="Equal" name="gold" value="280" id="21027"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Equal" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="300">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21007, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="301">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21027, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!--        	<embranchment id="608">
+			<conditions>
+				<timeouts long="6" id="21007" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="609">
+			<conditions>
+				<timeouts long="6" id="21027" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>   -->
+	</quest>
+	<quest id="21007" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="1锭40两押金退还了"/>
+				<gold type="Add" value="14000"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你70两押金"/>
+				<gold type="Add" value="7000"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Differ" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="1锭75两押金退还了"/>
+				<gold type="Add" value="17500"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你88两押金"/>
+				<gold type="Add" value="8800"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Differ" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="2锭10两押金退还了"/>
+				<gold type="Add" value="21000"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭5两押金"/>
+				<gold type="Add" value="10500"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Differ" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="2锭45两押金退还了"/>
+				<gold type="Add" value="24500"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭28两押金"/>
+				<gold type="Add" value="12800"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+				<var type="Differ" name="time" value="1" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="2锭80两押金退还了"/>
+				<gold type="Add" value="28000"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21007"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭40两押金"/>
+				<gold type="Add" value="14000"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="110">
+			<conditions>
+				<level type="Great" value="100"/>
+				<timeouts long="1200" id="150000" less="0"/>
+				<item value="11" id="1897"/>
+				<uservar type="Less" name="newsptravel" value="1"/>
+				<var type="Differ" name="state" value="1" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Equal" name="special" value="1" id="150000"/>
+			</conditions>
+			<actions>
+				<removeitem value="1" id="1897"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="80"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="1"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<uservar type="Add" name="newsptravel" value="1"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<var type="Set" name="state" value="-2" id="21007"/>
+				<var type="Set" name="state" value="-2" id="21027"/>
+				<var type="Set" name="state" value="-2" id="21008"/>
+				<timeouts id="150000"/>
+			</actions>
+		</embranchment>
+		<embranchment id="111">
+			<conditions>
+				<level type="Great" value="100"/>
+				<timeouts long="1200" id="150000" less="0"/>
+				<item value="11" id="1897"/>
+				<uservar type="Equal" name="newsptravel" value="1"/>
+				<var type="Differ" name="state" value="1" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Equal" name="special" value="1" id="150000"/>
+			</conditions>
+			<actions>
+				<removeitem value="1" id="1897"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="80"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="2"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<uservar type="Add" name="newsptravel" value="1"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<var type="Set" name="state" value="-2" id="21007"/>
+				<var type="Set" name="state" value="-2" id="21008"/>
+				<timeouts id="150000"/>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<level type="Great" value="100"/>
+				<timeouts long="1200" id="150000" less="0"/>
+				<item value="11" id="1897"/>
+				<uservar type="Equal" name="newsptravel" value="2"/>
+				<var type="Differ" name="state" value="1" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Equal" name="special" value="1" id="150000"/>
+			</conditions>
+			<actions>
+				<removeitem value="1" id="1897"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="80"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="3"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<uservar type="Add" name="newsptravel" value="1"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<var type="Set" name="state" value="-2" id="21007"/>
+				<var type="Set" name="state" value="-2" id="21008"/>
+				<timeouts id="150000"/>
+			</actions>
+		</embranchment>
+		<embranchment id="113">
+			<conditions>
+				<level type="Great" value="100"/>
+				<timeouts long="1200" id="150000" less="0"/>
+				<item value="11" id="1897"/>
+				<uservar type="Equal" name="newsptravel" value="3"/>
+				<var type="Differ" name="state" value="1" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Equal" name="special" value="1" id="150000"/>
+			</conditions>
+			<actions>
+				<removeitem value="1" id="1897"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="80"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="4"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<uservar type="Add" name="newsptravel" value="1"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<var type="Set" name="state" value="-2" id="21007"/>
+				<var type="Set" name="state" value="-2" id="21008"/>
+				<timeouts id="150000"/>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<level type="Great" value="100"/>
+				<timeouts long="1200" id="150000" less="0"/>
+				<item value="11" id="1897"/>
+				<uservar type="Equal" name="newsptravel" value="4"/>
+				<var type="Differ" name="state" value="1" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Differ" name="state" value="2" id="21007"/>
+				<var type="Equal" name="special" value="1" id="150000"/>
+			</conditions>
+			<actions>
+				<removeitem value="1" id="1897"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="80"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="5"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<uservar type="Add" name="newsptravel" value="1"/>
+				<exp value="100" id="21007" name="selflevel"/>
+				<var type="Set" name="state" value="-2" id="21007"/>
+				<var type="Set" name="state" value="-2" id="21008"/>
+				<timeouts id="150000"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21027" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="1锭40两押金退还了"/>
+				<gold type="Add" value="14000"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你70两押金"/>
+				<gold type="Add" value="7000"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Differ" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="1锭75两押金退还了"/>
+				<gold type="Add" value="17500"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你88两押金"/>
+				<gold type="Add" value="8800"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Differ" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="2锭10两押金退还了"/>
+				<gold type="Add" value="21000"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭5两押金"/>
+				<gold type="Add" value="10500"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Differ" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="2锭45两押金退还了"/>
+				<gold type="Add" value="24500"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭28两押金"/>
+				<gold type="Add" value="12800"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+				<var type="Differ" name="time" value="1" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="2锭80两押金退还了"/>
+				<gold type="Add" value="28000"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21027"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭40两押金"/>
+				<gold type="Add" value="14000"/>
+				<exp value="100" id="21027" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="31008">
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="gold" value="180" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="2" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="gold" value="180" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<var type="Equal" name="gold" value="225" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="2" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Equal" name="gold" value="225" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<var type="Equal" name="gold" value="270" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="2" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<var type="Equal" name="gold" value="270" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="32">
+			<conditions>
+				<var type="Equal" name="gold" value="315" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="2" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<var type="Equal" name="gold" value="315" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<var type="Equal" name="gold" value="360" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="2" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="44">
+			<conditions>
+				<var type="Equal" name="gold" value="360" id="21008"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Equal" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<var type="Equal" name="gold" value="180" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="2" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<var type="Equal" name="gold" value="180" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<var type="Equal" name="gold" value="225" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="2" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<var type="Equal" name="gold" value="225" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="122">
+			<conditions>
+				<var type="Equal" name="gold" value="270" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="2" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<var type="Equal" name="gold" value="270" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="132">
+			<conditions>
+				<var type="Equal" name="gold" value="315" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="2" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="134">
+			<conditions>
+				<var type="Equal" name="gold" value="315" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="142">
+			<conditions>
+				<var type="Equal" name="gold" value="360" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="2" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="144">
+			<conditions>
+				<var type="Equal" name="gold" value="360" id="21028"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Equal" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="300">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21008, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="301">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21028, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!-- 		<embranchment id="608">
+			<conditions>
+				<timeouts long="6" id="21008" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="609">
+			<conditions>
+				<timeouts long="6" id="21028" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>  -->
+	</quest>
+	<quest id="21008" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="1锭80两押金退还了"/>
+				<gold type="Add" value="18000"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你90两押金"/>
+				<gold type="Add" value="9000"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Differ" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="2锭25两押金退还了"/>
+				<gold type="Add" value="22500"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭13两押金"/>
+				<gold type="Add" value="11300"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Differ" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="2锭70两押金退还了"/>
+				<gold type="Add" value="27000"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭35两押金"/>
+				<gold type="Add" value="13500"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Differ" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="3锭15两押金退还了"/>
+				<gold type="Add" value="31500"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭58两押金"/>
+				<gold type="Add" value="15800"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+				<var type="Differ" name="time" value="1" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="3锭60两押金退还了"/>
+				<gold type="Add" value="36000"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21008"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭80两押金"/>
+				<gold type="Add" value="18000"/>
+				<exp value="100" id="21008" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21028" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="1锭80两押金退还了"/>
+				<gold type="Add" value="18000"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你90两押金"/>
+				<gold type="Add" value="9000"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Differ" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="2锭25两押金退还了"/>
+				<gold type="Add" value="22500"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭13两押金"/>
+				<gold type="Add" value="11300"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Differ" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="2锭70两押金退还了"/>
+				<gold type="Add" value="27000"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭35两押金"/>
+				<gold type="Add" value="13500"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Differ" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="3锭15两押金退还了"/>
+				<gold type="Add" value="31500"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭58两押金"/>
+				<gold type="Add" value="15800"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+				<var type="Differ" name="time" value="1" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="3锭60两押金退还了"/>
+				<gold type="Add" value="36000"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21028"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭80两押金"/>
+				<gold type="Add" value="18000"/>
+				<exp value="100" id="21028" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="31009">
+		<embranchment id="2">
+			<conditions>
+				<var type="Equal" name="gold" value="220" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="2" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<var type="Equal" name="gold" value="220" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<var type="Equal" name="gold" value="275" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="2" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<var type="Equal" name="gold" value="275" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<var type="Equal" name="gold" value="330" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="2" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<var type="Equal" name="gold" value="330" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="32">
+			<conditions>
+				<var type="Equal" name="gold" value="385" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="2" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<var type="Equal" name="gold" value="385" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<var type="Equal" name="gold" value="440" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="2" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="44">
+			<conditions>
+				<var type="Equal" name="gold" value="440" id="21009"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Equal" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="102">
+			<conditions>
+				<var type="Equal" name="gold" value="220" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="2" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="104">
+			<conditions>
+				<var type="Equal" name="gold" value="220" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="112">
+			<conditions>
+				<var type="Equal" name="gold" value="275" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="2" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="114">
+			<conditions>
+				<var type="Equal" name="gold" value="275" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="122">
+			<conditions>
+				<var type="Equal" name="gold" value="330" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="2" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="124">
+			<conditions>
+				<var type="Equal" name="gold" value="330" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="132">
+			<conditions>
+				<var type="Equal" name="gold" value="385" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="2" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="134">
+			<conditions>
+				<var type="Equal" name="gold" value="385" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 32)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="142">
+			<conditions>
+				<var type="Equal" name="gold" value="440" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="2" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，谢谢你，这些奖励你就收下吧。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 41)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="144">
+			<conditions>
+				<var type="Equal" name="gold" value="440" id="21029"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Equal" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但由于你超过了运镖时间，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 42)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="300">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21009, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="301">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    我们收到你的镖车了，但路上出了点意外，所以押金我们只能还你一部分。")
+this:AddTaskCmdItem("接受奖励{10002}", "v520", 21029, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<!-- 		<embranchment id="608">
+			<conditions>
+				<timeouts long="6" id="21009" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="609">
+			<conditions>
+				<timeouts long="6" id="21029" less="1"/>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    别急，我正忙着，等会再给你奖励。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>  -->
+	</quest>
+	<quest id="21009" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="2锭20两押金退还了"/>
+				<gold type="Add" value="22000"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭10两押金"/>
+				<gold type="Add" value="11000"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Differ" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="2锭75两押金退还了"/>
+				<gold type="Add" value="27500"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭38两押金"/>
+				<gold type="Add" value="13800"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Differ" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="3锭30两押金退还了"/>
+				<gold type="Add" value="33000"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭65两押金"/>
+				<gold type="Add" value="16500"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Differ" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="3锭85两押金退还了"/>
+				<gold type="Add" value="38500"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭93两押金"/>
+				<gold type="Add" value="19300"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+				<var type="Differ" name="time" value="1" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="4锭40两押金退还了"/>
+				<gold type="Add" value="44000"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21009"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你2锭20两押金"/>
+				<gold type="Add" value="22000"/>
+				<exp value="100" id="21009" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21029" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="2锭20两押金退还了"/>
+				<gold type="Add" value="22000"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="2" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭10两押金"/>
+				<gold type="Add" value="11000"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Differ" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="2锭75两押金退还了"/>
+				<gold type="Add" value="27500"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭38两押金"/>
+				<gold type="Add" value="13800"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Differ" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="3锭30两押金退还了"/>
+				<gold type="Add" value="33000"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭65两押金"/>
+				<gold type="Add" value="16500"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Differ" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="3锭85两押金退还了"/>
+				<gold type="Add" value="38500"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="32" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你1锭93两押金"/>
+				<gold type="Add" value="19300"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="41" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+				<var type="Differ" name="time" value="1" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="4锭40两押金退还了"/>
+				<gold type="Add" value="44000"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="42" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21029"/>
+			</conditions>
+			<actions>
+				<notify content="由于你超过规定时间，所以只退给你2锭20两押金"/>
+				<gold type="Add" value="22000"/>
+				<exp value="100" id="21029" name="selflevel"/>
+				<notify content="你完成了运镖，增加了经验"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+           </quest>
+           <quest id="21030" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21030"/>
+			</conditions>
+			<actions>
+                                <finishseptguard/>
+                                <bulletin content="恭喜贵家族完成了运镖" kind="2" />
+				<var type="Set" name="state" value="-2" id="21030"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="16040" name="白骨洞-食怨僵尸">
+	<quest id="331" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<additem value="1" id="2125" odds="3000"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="336" new="1">
+		<embranchment id="1">
+			<conditions>
+				<item value="1" id="2133"/>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<additem value="1" id="2052" odds="4000"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20366" new="1">
+		<embranchment id="1">
+			<conditions>
+				<var type="Equal" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<additem value="1" id="2126" odds="4000"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

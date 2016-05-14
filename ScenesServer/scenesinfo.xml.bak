@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<ScenesInfo>
+	<!--id:服务器编号,country:国家编号,mapID:地图编号-->
+	<server id="21">
+		<country id="3">
+			<map mapID="102"/>
+		</country>
+		<country id="6">
+			<map mapID="213"/>
+			<map mapID="214"/>
+			<map mapID="215"/>
+			<map mapID="1821"/>
+			<map mapID="1822"/>
+			<map mapID="1071"/>
+			<map mapID="1072"/>
+			<map mapID="1721"/>
+			<map mapID="1722"/>
+			<map mapID="190"/>
+			<map mapID="189"/>
+			<map mapID="172"/>
+			<map mapID="173"/>
+			<map mapID="174"/>
+			<map mapID="175"/>
+			<map mapID="176"/>
+			<map mapID="177"/>
+			<map mapID="178"/>
+			<map mapID="179"/>
+			<map mapID="180"/>
+			<map mapID="181"/>
+			<map mapID="182"/>
+			<map mapID="134"/>
+			<map mapID="107"/>
+			<map mapID="191"/>
+			<map mapID="192"/>
+			<map mapID="193"/>
+			<map mapID="194"/>
+			<map mapID="195"/>
+			<map mapID="196"/>
+			<map mapID="197"/>
+			<map mapID="198"/>
+			<map mapID="199"/>
+			<map mapID="200"/>
+			<map mapID="201"/>
+			<map mapID="202"/>
+			<map mapID="203"/>
+			<map mapID="210"/>
+			<map mapID="211"/>
+			<map mapID="212"/>
+		</country>
+		<country id="2">
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="131"/>
+			<map mapID="132"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1391"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="118"/>
+			<map mapID="138"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+		</country>
+	</server>
+	<server id="22">
+		<country id="2">
+			<map mapID="102"/>
+		</country>
+		<country id="3">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+		<country id="4">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="102"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="23">
+		<country id="4">
+			<map mapID="102"/>
+		</country>
+		<country id="5">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="24">
+		<country id="5">
+			<map mapID="102"/>
+		</country>
+		<country id="4">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="25">
+		<country id="7">
+			<map mapID="102"/>
+		</country>
+		<country id="8">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="26">
+		<country id="8">
+			<map mapID="102"/>
+		</country>
+		<country id="7">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="27">
+		<country id="9">
+			<map mapID="102"/>
+		</country>
+		<country id="10">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="28">
+		<country id="10">
+			<map mapID="102"/>
+		</country>
+		<country id="9">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="29">
+		<country id="11">
+			<map mapID="102"/>
+		</country>
+		<country id="12">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<server id="30">
+		<country id="12">
+			<map mapID="102"/>
+		</country>
+		<country id="11">
+			<map mapID="204"/>
+			<map mapID="205"/>
+			<map mapID="206"/>
+			<map mapID="207"/>
+			<map mapID="208"/>
+			<map mapID="209"/>
+			<map mapID="183"/>
+			<map mapID="184"/>
+			<map mapID="185"/>
+			<map mapID="186"/>
+			<map mapID="187"/>
+			<map mapID="188"/>
+			<map mapID="138"/>
+			<map mapID="118"/>
+			<map mapID="101"/>
+			<map mapID="104"/>
+			<map mapID="105"/>
+			<map mapID="103"/>
+			<map mapID="106"/>
+			<map mapID="128"/>
+			<map mapID="129"/>
+			<map mapID="123"/>
+			<map mapID="124"/>
+			<map mapID="130"/>
+			<map mapID="132"/>
+			<map mapID="131"/>
+			<map mapID="119"/>
+			<map mapID="120"/>
+			<map mapID="121"/>
+			<map mapID="122"/>
+			<map mapID="108"/>
+			<map mapID="109"/>
+			<map mapID="110"/>
+			<map mapID="111"/>
+			<map mapID="112"/>
+			<map mapID="113"/>
+			<map mapID="114"/>
+			<map mapID="115"/>
+			<map mapID="116"/>
+			<map mapID="135"/>
+			<map mapID="136"/>
+			<map mapID="137"/>
+			<map mapID="139"/>
+			<map mapID="141"/>
+			<map mapID="142"/>
+			<map mapID="143"/>
+			<map mapID="144"/>
+			<map mapID="145"/>
+			<map mapID="146"/>
+			<map mapID="147"/>
+			<map mapID="148"/>
+			<map mapID="149"/>
+			<map mapID="150"/>
+			<map mapID="151"/>
+			<map mapID="1041"/>
+			<map mapID="1042"/>
+			<map mapID="1022"/>
+			<map mapID="1021"/>
+			<map mapID="1392"/>
+			<map mapID="1081"/>
+			<map mapID="1082"/>
+			<map mapID="1411"/>
+			<map mapID="1412"/>
+			<map mapID="1391"/>
+			<map mapID="1031"/>
+			<map mapID="1032"/>
+		</country>
+	</server>
+	<!--id:国家编号,name:国家名称,mapID:该国家主城(新手出生等);国家名称不能有特殊字符"·"function:0表示可以注册，1表示不可以注册。-->
+	<countryinfo>
+		<country id="2" name="宋国" mapID="101" function="0"/>
+		<country id="3" name="魏国" mapID="101" function="0"/>
+		<country id="4" name="齐国" mapID="101" function="0"/>
+		<country id="5" name="燕国" mapID="101" function="0"/>
+		<country id="7" name="唐国" mapID="101" function="0"/>
+		<country id="8" name="汉国" mapID="101" function="0"/>
+		<country id="9" name="吴国" mapID="101" function="0"/>
+		<country id="10" name="赵国" mapID="101" function="0"/>
+		<country id="11" name="周国" mapID="101" function="0"/>
+		<country id="12" name="楚国" mapID="101" function="0"/>
+		<country id="6" name="中立区" function="1"/>
+	</countryinfo>
+	<!--mapID:地图编号,name:地图名称,fileName:地图文件名,foreignerbackto:外国人死亡候重生地图,commoncountrybackto:在公共国的公共地图上死亡后重生地图,commonuserbackto:无国籍人在国外死亡重生地,backto:死亡后重生地图编号;地图名称不能有特殊字符"·",文件名称不能有特殊字符".",backtocity:表示回城符可以回到的城市 backtodare正式国战复活 countrydarebackto 就是指定在该地图上，国战期间死亡的攻方国家的人，死后去哪个地图复活。countrydefbackto 守方复活地图国战期间 exprate经验加成-->
+	<!--special特殊功能定义(用二进制表示),function特殊功能定义(用二进制表示),包括:不可骑马(1),主城(2). 练功点（4）  转轴不可以使用（8） 不红名地图（16） 收费地图（32） 不可组队（64）不可使用令牌 （128）-->
+	<mapinfo>
+		<map mapID="101" name="清源村" fileName="qingyuancun-main" backtocity="101" foreignerbackto="102" function="128" commonuserbackto="134" backtodare="102"/>
+		<map mapID="104" name="凤尾村" fileName="fengweicun-main" backtocity="102" foreignerbackto="102" backto="102" function="" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="105" name="山寨前哨" fileName="fengshoucun-main" backtocity="102" foreignerbackto="102" backto="102" function="4" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="183" name="凤凰城宅子" fileName="fminzhai1" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="184" name="凤凰城民宅" fileName="fminzhai2" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="185" name="凤凰城客栈" fileName="kezhan" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="19"/>
+		<map mapID="102" name="凤凰城" fileName="fenghuangcheng-main" backtocity="102" foreignerbackto="102" function="2" commonuserbackto="134" backtodare="102" level="10" pklevel="59"/>
+		<map mapID="103" name="北郊" fileName="fengzuiling" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="106" name="凤祥镇" fileName="fengxiangzhen-main" backtocity="139" foreignerbackto="139" backto="139" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="108" name="白骨洞一层" fileName="luanzangku1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="109" name="白骨洞二层" fileName="luanzangku2" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="110" name="白骨洞三层" fileName="luanzangku3" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="111" name="白骨洞四层" fileName="luanzangku4" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="112" name="白骨洞五层" fileName="luanzangku5" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="113" name="白骨洞六层" fileName="luanzangku6" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="114" name="白骨洞七层" fileName="luanzangku7" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="115" name="白骨洞八层" fileName="luanzangku8" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="116" name="白骨洞九层" fileName="luanzangku9" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="151" name="白骨洞十层" fileName="luanzangku10" backtocity="139" foreignerbackto="139" backto="139" function="133" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="118" name="活动室" fileName="shilian2" backtocity="118" foreignerbackto="118" function="137" commonuserbackto="118" backtodare="118"/>
+		<map mapID="189" name="牢狱" fileName="jianyu" backtocity="189" foreignerbackto="189" backto="189" function="217" commonuserbackto="189" commoncountrybackto="189" backtodare="189" level="20"/>
+		<map mapID="203" name="监牢" fileName="jianlao" backtocity="203" foreignerbackto="203" backto="203" function="217" commonuserbackto="203" commoncountrybackto="203" backtodare="203" level="20"/>
+		<map mapID="119" name="龙冈山一寨" fileName="shanzhai1" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="120" name="龙冈山二寨" fileName="shanzhai2" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="121" name="龙冈山三寨" fileName="shanzhai3" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="122" name="龙冈山四寨" fileName="shanzhai4" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="128" name="百兽谷" fileName="baishougu" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="129" name="兽王谷" fileName="shouwanggu" backtocity="102" foreignerbackto="102" backto="102" function="5" commonuserbackto="134" backtodare="102" level="19" pklevel="59"/>
+		<map mapID="123" name="千江镇" fileName="qianjiangzhen-main" backtocity="139" foreignerbackto="139" backto="139" function="" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="107" name="倭寇营地" fileName="haizeiyingdi" backtocity="134" foreignerbackto="134" backto="5" function="4" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134" exprate="10"/>
+		<map mapID="124" name="凤祥镇西郊" fileName="fengxiangzhenxijiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="130" name="蛟龙洞一" fileName="jiaolongdong1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="131" name="蛟龙洞二" fileName="jiaolongdong2" backtocity="139" foreignerbackto="139" backto="139" function="133" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="132" name="沼泽湿地" fileName="zhaozeshidi" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="134" name="皇城" fileName="huangcheng" backtocity="134" foreignerbackto="134" function="" commonuserbackto="134" commoncountrybackto="134" backtodare="134" level="20" exprate="10"/>
+		<!--map mapID="152" name="幽冥地界一界" fileName="you1" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="153" name="幽冥地界二界" fileName="you2" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="154" name="幽冥地界三界" fileName="you3" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="155" name="幽冥地界四界" fileName="you4" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="156" name="幽冥地界五界" fileName="you5" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="157" name="幽冥地界六界" fileName="you6" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="158" name="幽冥地界七界" fileName="you7" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="159" name="幽冥地界八界" fileName="you8" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="160" name="幽冥地界九界" fileName="you9" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="161" name="幽冥地界十界" fileName="you10" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="162" name="封魔地狱一层" fileName="mo1" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="163" name="封魔地狱二层" fileName="mo2" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="164" name="封魔地狱三层" fileName="mo3" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="165" name="封魔地狱四层" fileName="mo4" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="166" name="封魔地狱五层" fileName="mo5" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="167" name="封魔地狱六层" fileName="mo6" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="168" name="封魔地狱七层" fileName="mo7" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="169" name="封魔地狱八层" fileName="mo8" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="170" name="封魔地狱九层" fileName="mo9" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/>
+		<map mapID="171" name="封魔地狱十层" fileName="mo10" backtocity="134" foreignerbackto="134" backto="134" function="41" commonuserbackto="134" commoncountrybackto="137" backtodare="134" level="19"/-->
+		<map mapID="135" name="南郊" fileName="nanjiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" countrydarebackto="" level="20"/>
+		<map mapID="136" name="东郊" fileName="dongjiao" backtocity="139" foreignerbackto="139" backto="139" function="4" commonuserbackto="134" backtodare="139" countrydarebackto="" level="20"/>
+		<map mapID="137" name="边境" fileName="chuansongdian" backtocity="139" foreignerbackto="139" backto="139" function="" commonuserbackto="134" backtodare="139" countrydarebackto="" level="20"/>
+		<map mapID="138" name="下水道" fileName="xiashuidao" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" countrydarebackto="" level="20"/>
+		<map mapID="139" name="王城" fileName="wushuangcheng-main" backtocity="139" foreignerbackto="139" function="2" commonuserbackto="134" backtodare="139" countrydarebackto="136" countrydefbackto="135" level="20"/>
+		<map mapID="186" name="王城宅子" fileName="wminzhai1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="187" name="王城民宅" fileName="wminzhai2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="188" name="王城百货休息室" fileName="zahuodianxiuxi" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="182" name="牧场" fileName="muchang" backtocity="134" foreignerbackto="134" backto="134" function="" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="190" name="古墓" fileName="gumu" backtocity="134" foreignerbackto="134" backto="134" function="133" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="191" name="圣兽巢穴一层" fileName="shengshou1" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="192" name="圣兽巢穴二层" fileName="shengshou2" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="193" name="武夷王墓一层" fileName="wangmu1" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="194" name="武夷王墓二层" fileName="wangmu2" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="195" name="武夷王墓三层" fileName="wangmu3" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="196" name="武夷王墓四层" fileName="wangmu4" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="197" name="武夷王墓五层" fileName="wangmu5" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="198" name="武夷王墓六层" fileName="wangmu6" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="199" name="武夷王墓七层" fileName="wangmu7" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="200" name="武夷王墓八层" fileName="wangmu8" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="201" name="武夷王墓九层" fileName="wangmu9" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="202" name="武夷王墓十层" fileName="wangmu10" backtocity="134" foreignerbackto="134" backto="134" function="161" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="172" name="机械工厂一层" fileName="jixie1" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="173" name="机械工厂二层" fileName="jixie2" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="174" name="机械工厂三层" fileName="jixie3" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="175" name="机械工厂四层" fileName="jixie4" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="176" name="机械工厂五层" fileName="jixie5" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="177" name="机械工厂六层" fileName="jixie6" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="178" name="机械工厂七层" fileName="jixie7" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="179" name="机械工厂八层" fileName="jixie8" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="180" name="机械工厂九层" fileName="jixie9" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="181" name="机械工厂十层" fileName="jixie10" backtocity="134" foreignerbackto="134" backto="134" function="5" commonuserbackto="134" backtodare="134" level="20" exprate="10" commoncountrybackto="134"/>
+		<map mapID="1022" name="凤凰城密道" fileName="fenghuangchenghuanggongmishi" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1021" name="凤凰城密室" fileName="fenghuangchengdadian" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1392" name="王城密道" fileName="wushuangchenghuanggongmishi" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1391" name="王城密室" fileName="wushuangchengdadian" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="141" name="精怪洞穴一层" fileName="jingguai1" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="142" name="精怪洞穴二层" fileName="jingguai2" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="143" name="精怪洞穴三层" fileName="jingguai3" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="144" name="精怪洞穴四层" fileName="jingguai4" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="145" name="精怪洞穴五层" fileName="jingguai5" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="146" name="精怪洞穴六层" fileName="jingguai6" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="147" name="精怪洞穴七层" fileName="jingguai7" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="148" name="精怪洞穴八层" fileName="jingguai8" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="149" name="精怪洞穴九层" fileName="jingguai9" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="150" name="精怪洞穴十层" fileName="jingguai10" backtocity="139" foreignerbackto="139" backto="139" function="5" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1081" name="白骨洞密室" fileName="luanyin1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1082" name="白骨洞密道" fileName="luanyin2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1411" name="精怪洞穴密室" fileName="jinyin1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1412" name="精怪洞穴密道" fileName="jinyin2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1041" name="凤尾村密室" fileName="weiyin1" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1042" name="凤尾村密道" fileName="weiyin2" backtocity="102" foreignerbackto="102" backto="102" function="137" commonuserbackto="134" backtodare="102" level="20"/>
+		<map mapID="1031" name="北郊密室" fileName="beijiaomi1" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="1032" name="北郊密道" fileName="beijiaomi2" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="204" name="边境木房" fileName="bmufang" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="205" name="边境木屋" fileName="bmuwu" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="206" name="南郊木房" fileName="nmufang" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="207" name="南郊木屋" fileName="nmuwu" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="208" name="东郊木房" fileName="dmufang" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="209" name="东郊木屋" fileName="dmuwu" backtocity="139" foreignerbackto="139" backto="139" function="137" commonuserbackto="134" backtodare="139" level="20"/>
+		<map mapID="210" name="皇城木房" fileName="hmufang" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="211" name="皇城木房子" fileName="hmufangzi" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="212" name="皇城宅子" fileName="hzhaizi" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="134" level="20" commoncountrybackto="134"/>
+		<map mapID="1071" name="倭寇营地密室" fileName="wyin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="1072" name="倭寇营地密道" fileName="wyin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="1721" name="机械工厂密室" fileName="jyin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="1722" name="机械工厂密道" fileName="jyin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="1821" name="牧场密室" fileName="myin1" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="1822" name="牧场密道" fileName="myin2" backtocity="134" foreignerbackto="134" backto="134" function="137" commonuserbackto="134" backtodare="139" level="20" commoncountrybackto="134"/>
+		<map mapID="213" name="初级比武岛" fileName="jingjidao" foreignerbackto="139" function="184" level="20"/>
+		<map mapID="214" name="中级比武岛" fileName="jingjidao2" foreignerbackto="139" function="184" level="20"/>
+		<map mapID="215" name="高级比武岛" fileName="jingjidao3" foreignerbackto="139" function="184" level="20"/>
+	</mapinfo>
+</ScenesInfo>

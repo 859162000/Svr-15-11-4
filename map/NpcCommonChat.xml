@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<root>
+	<chat type="1" rate="60">
+		<!--发现敌人时说的话-->
+		<content str="不知死活的东西。"/>
+		<content str="天堂有路你不走，地狱无门你偏要来。"/>
+		<content str="老子一生气，后果很严重。"/>
+		<content str="等等，让我先摆好姿势。"/>
+		<content str="我在这儿……"/>
+		<content str="关门，放狗！"/>
+		<content str="先说好，不许打脸"/>
+		<content str="小子，装备不错嘛！"/>
+		<content str="不许笑，打劫的。"/>
+		<content str="今天打劫不杀人，杀人就杀你。"/>
+	</chat>
+	<chat type="2" rate="20">
+		<!--攻击时说的话-->
+		<content str="小样，你还挺能打的嘛！"/>
+		<content str="我插，我砍，我踹！"/>
+		<content str="别发抖呀，只是切磋一下啊！"/>
+		<content str="你会不会用技能啊！"/>
+		<content str="人在江湖飘，哪能不挨刀。"/>
+		<content str="最近没吃饱啊。"/>
+		<content str="小样，你缺钙吧！"/>
+		<content str="你打我呀！你打呀我呀！！！"/>
+		<content str="你怎么老打我脸啊！"/>
+	</chat>
+	<chat type="3" rate="20">
+		<!--撤退时说的话-->
+		<content str="老子今天心情好，放你一马。"/>
+		<content str="你还是回家卖红薯去吧！"/>
+		<content str="你回去再练十年八年吧。"/>
+		<content str="有性格，跑都跑那么帅。"/>
+		<content str="小样，你应该补点钙了。"/>
+		<content str="叫你打我脸。"/>
+	</chat>
+	<chat type="4" rate="60">
+		<!--死亡时说的话-->
+		<content str="老子十八年后又是一条好汉。"/>
+		<content str="我做鬼也不会放过你的。"/>
+		<content str="我不想死啊！"/>
+		<content str="出来混，迟早要还的。"/>
+		<content str="早知道，我就多补点钙。"/>
+		<content str="不鞭尸，留我个全尸吧！"/>
+		<content str="我去见观音姐姐了。"/>
+		<content str="郁闷……"/>
+	</chat>
+	<chat type="5" rate="20">
+		<!--逃跑时说的话-->
+		<content str="放我一条生路吧！"/>
+		<content str="英雄，饶了我吧！"/>
+		<content str="我叫上几个兄弟来帮忙"/>
+		<content str="等等，我肚子疼……"/>
+		<content str="风紧！扯乎！"/>
+		<content str="说好不打脸的，呜呜呜……"/>
+	</chat>
+	<chat type="9" rate="0">
+                <!--买卖npc随机说的话-->
+                <content str="大家好啊~"/>
+                <content str="新年好~"/>
+                <content str="06年也要加油升级啊~"/>
+        </chat>
+</root>

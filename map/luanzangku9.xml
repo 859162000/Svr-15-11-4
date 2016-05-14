@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的 -->
+	<waypoint>
+		<point x="102" y="310"/>
+		<point x="102" y="311"/>
+		<point x="102" y="312"/>
+		<point x="102" y="313"/>
+		<point x="103" y="310"/>
+		<point x="103" y="311"/>
+		<point x="103" y="312"/>
+		<point x="103" y="313"/>
+		<point x="102" y="310"/>
+		<point x="102" y="311"/>
+		<point x="102" y="312"/>
+		<point x="102" y="313"/>
+		<point x="103" y="310"/>
+		<point x="103" y="311"/>
+		<dest name="luanzangku8" country="0" x="188" y="51"/>
+		<dest name="luanzangku8" country="0" x="188" y="52"/>
+		<dest name="luanzangku8" country="0" x="188" y="53"/>
+		<dest name="luanzangku8" country="0" x="188" y="54"/>
+		<dest name="luanzangku8" country="0" x="188" y="55"/>
+		<dest name="luanzangku8" country="0" x="188" y="56"/>
+		<dest name="luanzangku8" country="0" x="188" y="57"/>
+		<dest name="luanzangku8" country="0" x="188" y="58"/>
+		<dest name="luanzangku8" country="0" x="188" y="59"/>
+		<dest name="luanzangku8" country="0" x="189" y="52"/>
+		<dest name="luanzangku8" country="0" x="189" y="53"/>
+		<dest name="luanzangku8" country="0" x="189" y="54"/>
+		<dest name="luanzangku8" country="0" x="189" y="55"/>
+		<dest name="luanzangku8" country="0" x="189" y="56"/>
+	</waypoint>
+	<waypoint>
+		<point x="200" y="80"/>
+		<point x="200" y="81"/>
+		<point x="200" y="82"/>
+		<point x="199" y="81"/>
+		<point x="199" y="82"/>
+		<point x="199" y="83"/>
+		<point x="198" y="82"/>
+		<point x="198" y="83"/>
+		<dest name="luanzangku10" country="0" x="331" y="315"/>
+		<dest name="luanzangku10" country="0" x="332" y="315"/>
+		<dest name="luanzangku10" country="0" x="333" y="315"/>
+		<dest name="luanzangku10" country="0" x="334" y="315"/>
+		<dest name="luanzangku10" country="0" x="335" y="315"/>
+		<dest name="luanzangku10" country="0" x="336" y="315"/>
+		<dest name="luanzangku10" country="0" x="337" y="315"/>
+		<dest name="luanzangku10" country="0" x="338" y="315"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="17" height="29" x="95" y="294" type="1" color="0,0,255,0"/>
+	<zonedef width="20" height="32" x="191" y="65" type="1" color="0,0,255,0"/>
+	<npc id="26223" name="骷髅" width="296" height="198" x="1" y="101" num="1" interval="7200"/>
+	<npc id="26222" name="劈头僵尸" width="296" height="198" x="1" y="101" num="1" interval="7200"/>
+	<npc id="21082" name="骷髅" width="296" height="198" x="1" y="101" num="1" interval="7200"/>
+	<npc id="55186 " name="草" width="296" height="198" x="1" y="101" num="6" interval="1800"/>
+	<npc id="55105 " name="草" width="296" height="198" x="1" y="101" num="6" interval="1800"/>
+	<npc id="55186 " name="草" width="296" height="198" x="1" y="101" num="6" interval="1800"/>
+	<npc id="55105 " name="草" width="296" height="198" x="1" y="101" num="6" interval="1800"/>
+	<npc id="55221" name="草" width="296" height="198" x="1" y="101" num="4" interval="1800"/>
+	<npc id="16076" name="百" width="74" height="60" x="132" y="287" num="5" interval="90" color="0,255,0,0"/>
+	<npc id="16076" name="百" width="97" height="81" x="57" y="38" num="8" interval="90" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="8" y="184" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="16" y="193" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="167" y="244" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="27" height="27" x="169" y="256" num="20" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="253" y="171" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="246" y="215" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16476" name="百" width="29" height="47" x="248" y="194" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="119" y="140" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="114" y="152" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="85" y="54" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="89" y="59" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="196" y="121" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="189" y="126" num="30" interval="40" color="0,255,0,0"/>
+	<npc id="16480" name="百" width="29" height="47" x="132" y="64" num="35" interval="40" color="0,255,0,0"/>
+	<npc id="16482" name="百" width="121" height="148" x="60" y="28" num="40" interval="80" color="0,255,0,0"/>
+	<npc id="16481" name="百" width="122" height="153" x="63" y="22" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16483" name="百" width="121" height="163" x="65" y="17" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16482" name="百" width="122" height="116" x="155" y="101" num="40" interval="80" color="0,255,0,0"/>
+	<npc id="16481" name="百" width="122" height="123" x="157" y="98" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16483" name="百" width="122" height="123" x="156" y="98" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16479" name="百" width="121" height="107" x="9" y="180" num="40" interval="80" color="0,255,0,0"/>
+	<npc id="16478" name="百" width="121" height="107" x="10" y="183" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16477" name="百" width="121" height="107" x="12" y="176" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16477" name="百" width="121" height="107" x="116" y="237" num="20" interval="80" color="0,255,0,0"/>
+	<npc id="16479" name="百" width="128" height="94" x="117" y="228" num="40" interval="80" color="0,255,0,0"/>
+	<npc id="16478" name="百" width="121" height="107" x="114" y="231" num="20" interval="80" color="0,255,0,0"/>
+</map>

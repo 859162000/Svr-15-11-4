@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<zonedef width="200" height="300" x="0" y="0" type="16" color="0,0,255,0"/>
+	<npc id="26008" name="异族男巫(魔)" width="86" height="191" x="59" y="65" num="1" interval="600" color="0,255,0,0"/>
+	<npc id="30003" name="山寨霸王" width="25" height="38" x="82" y="132" num="1" interval="3600" color="0,255,0,0"/>
+	<npc id="5068" name="回城传送者" width="1" height="1" x="54" y="108" num="1" interval="1800"/>
+	<npc id="5069" name="回城传送者" width="1" height="1" x="47" y="164" num="1" interval="1800"/>
+	<npc id="5070" name="回城传送者" width="1" height="1" x="52" y="205" num="1" interval="1800"/>
+	<npc id="5071" name="回城传送者" width="1" height="1" x="82" y="58" num="1" interval="1800"/>
+	<npc id="5072" name="回城传送者" width="1" height="1" x="122" y="51" num="1" interval="1800"/>
+	<npc id="5073" name="回城传送者" width="1" height="1" x="83" y="263" num="1" interval="1800"/>
+	<npc id="5074" name="回城传送者" width="1" height="1" x="107" y="267" num="1" interval="1800"/>
+	<npc id="5075" name="回城传送者" width="1" height="1" x="150" y="93" num="1" interval="1800"/>
+	<npc id="5076" name="回城传送者" width="1" height="1" x="150" y="130" num="1" interval="1800"/>
+	<npc id="5077" name="回城传送者" width="1" height="1" x="149" y="172" num="1" interval="1800"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+</map>

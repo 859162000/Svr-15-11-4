@@ -1,0 +1,1226 @@
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+cc1: 警告：command line option ‘-std=gnu++11’ is valid for C++/ObjC++ but not for C
+Makefile:15: .zMysqlDBConnPool.d: 没有那个文件或目录
+Makefile:15: .zXMLParser.d: 没有那个文件或目录
+Makefile:15: .Zebra.d: 没有那个文件或目录
+Makefile:15: .zArg.d: 没有那个文件或目录
+Makefile:15: .zSocket.d: 没有那个文件或目录
+Makefile:15: .zTCPClient.d: 没有那个文件或目录
+Makefile:15: .zTCPClientTask.d: 没有那个文件或目录
+Makefile:15: .zTCPClientTaskPool.d: 没有那个文件或目录
+Makefile:15: .zTCPServer.d: 没有那个文件或目录
+Makefile:15: .zMTCPServer.d: 没有那个文件或目录
+Makefile:15: .zThread.d: 没有那个文件或目录
+Makefile:15: .zTCPTask.d: 没有那个文件或目录
+Makefile:15: .zTCPTaskPool.d: 没有那个文件或目录
+Makefile:15: .zHttpTask.d: 没有那个文件或目录
+Makefile:15: .zHttpTaskPool.d: 没有那个文件或目录
+Makefile:15: .zLogger.d: 没有那个文件或目录
+Makefile:15: .zTimer.d: 没有那个文件或目录
+Makefile:15: .zTime.d: 没有那个文件或目录
+Makefile:15: .zService.d: 没有那个文件或目录
+Makefile:15: .zNetService.d: 没有那个文件或目录
+Makefile:15: .zMNetService.d: 没有那个文件或目录
+Makefile:15: .zSubNetService.d: 没有那个文件或目录
+Makefile:15: .zRegex.d: 没有那个文件或目录
+Makefile:15: .zProperties.d: 没有那个文件或目录
+Makefile:15: .zIncludeXML.d: 没有那个文件或目录
+Makefile:15: .zConfile.d: 没有那个文件或目录
+Makefile:15: .zDatabaseManager.d: 没有那个文件或目录
+Makefile:15: .zBase64.d: 没有那个文件或目录
+Makefile:15: .zUrl.d: 没有那个文件或目录
+Makefile:15: .zJpeg.d: 没有那个文件或目录
+Makefile:15: .zMetaData.d: 没有那个文件或目录
+Makefile:15: .zDatabase.d: 没有那个文件或目录
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zMysqlDBConnPool.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zXMLParser.cpp:18:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+zMysqlDBConnPool.cpp: 在静态成员函数‘static const char* zDBConnPool::getTypeString(int)’中:
+zMysqlDBConnPool.cpp:2098:17: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+  char *retval = "DB_NONE";
+                 ^
+zMysqlDBConnPool.cpp:2103:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_BYTE";
+           ^
+zMysqlDBConnPool.cpp:2106:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_CHAR";
+           ^
+zMysqlDBConnPool.cpp:2109:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_WORD";
+           ^
+zMysqlDBConnPool.cpp:2112:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_DWORD";
+           ^
+zMysqlDBConnPool.cpp:2115:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_QWORD";
+           ^
+zMysqlDBConnPool.cpp:2118:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_STR";
+           ^
+zMysqlDBConnPool.cpp:2121:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_BIN";
+           ^
+zMysqlDBConnPool.cpp:2124:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_ZIP";
+           ^
+zMysqlDBConnPool.cpp:2127:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_BIN2";
+           ^
+zMysqlDBConnPool.cpp:2130:11: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+    retval = "DB_ZIP2";
+           ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from Zebra.cpp:5:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from zArg.h:15,
+                 from zArg.cpp:11:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zSocket.cpp:26:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPClient.h:17,
+                 from zTCPClient.cpp:24:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+zSocket.cpp: 在静态成员函数‘static const char* zSocket::getIPByIfName(const char*)’中:
+zSocket.cpp:441:25: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+  static char *none_ip = "0.0.0.0";
+                         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPClientTask.h:17,
+                 from zTCPClientTask.cpp:24:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPClientTaskPool.cpp:19:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPServer.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zMTCPServer.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zThread.h:18,
+                 from zThread.cpp:19:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPTask.cpp:18:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zTCPTaskPool.cpp:19:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zHttpTask.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zHttpTaskPool.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+zLogger.cpp: 在成员函数‘const LogString& zLogger::getName()’中:
+zLogger.cpp:390:25: 警告：返回临时变量的引用 [-Wreturn-local-addr]
+  return logger->getName();
+                         ^
+zLogger.cpp: 在成员函数‘bool LocalDailyRollingFileAppender::relinkfile(log4cxx::helpers::Pool&)’中:
+zLogger.cpp:111:1: 警告：在有返回值的函数中，控制流程到达函数尾 [-Wreturn-type]
+ }
+ ^
+zLogger.cpp: 在成员函数‘bool LocalDailyRollingFileAppender::my_rollover(log4cxx::helpers::Pool&)’中:
+zLogger.cpp:175:1: 警告：在有返回值的函数中，控制流程到达函数尾 [-Wreturn-type]
+ }
+ ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zThread.h:18,
+                 from zTimer.h:17,
+                 from zTimer.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zTime.cpp:2:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zSocket.h:35,
+                 from zService.cpp:20:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from zService.h:24,
+                 from zNetService.cpp:15:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from zService.h:24,
+                 from zMNetService.cpp:15:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from zService.h:24,
+                 from zSubNetService.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+zSubNetService.cpp: 在成员函数‘virtual bool zSubNetService::init()’中:
+zSubNetService.cpp:288:20: 警告：variable ‘cmd’ set but not used [-Wunused-but-set-variable]
+    Cmd::t_NullCmd *cmd = 0;
+                    ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zConfile.cpp:12:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zDatabaseManager.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from zDatabase.h:20:0,
+                 from zDatabaseManager.h:11,
+                 from zDatabaseManager.cpp:2:
+Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zMetaData.cpp:17:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from zProperties.h:19,
+                 from Zebra.h:6,
+                 from zDatabase.h:19,
+                 from zDatabase.cpp:9:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from zDatabase.h:20:0,
+                 from zDatabase.cpp:9:
+Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+Makefile:22: .CartoonPet.d: 没有那个文件或目录
+Makefile:22: .CharInitInfo.d: 没有那个文件或目录
+Makefile:22: .Chat.d: 没有那个文件或目录
+Makefile:22: .CountryAlly.d: 没有那个文件或目录
+Makefile:22: .CountryDare.d: 没有那个文件或目录
+Makefile:22: .CountryTech.d: 没有那个文件或目录
+Makefile:22: .Dice.d: 没有那个文件或目录
+Makefile:22: .Gold.d: 没有那个文件或目录
+Makefile:22: .GuardNpc.d: 没有那个文件或目录
+Makefile:22: .Horse.d: 没有那个文件或目录
+Makefile:22: .Leechdom.d: 没有那个文件或目录
+Makefile:22: .LiveSkill.d: 没有那个文件或目录
+Makefile:22: .LoadMap.d: 没有那个文件或目录
+Makefile:22: .MagicRange.d: 没有那个文件或目录
+Makefile:22: .Mask.d: 没有那个文件或目录
+Makefile:22: .MessageSystem.d: 没有那个文件或目录
+Makefile:22: .MiniClient.d: 没有那个文件或目录
+Makefile:22: .MiniGame.d: 没有那个文件或目录
+Makefile:22: .NpcTrade.d: 没有那个文件或目录
+Makefile:22: .ObjectManager.d: 没有那个文件或目录
+Makefile:22: .Property.d: 没有那个文件或目录
+Makefile:22: .QuestAction.d: 没有那个文件或目录
+Makefile:22: .QuestCondition.d: 没有那个文件或目录
+Makefile:22: .Quest.d: 没有那个文件或目录
+Makefile:22: .QuestEvent.d: 没有那个文件或目录
+Makefile:22: .QuestTable.d: 没有那个文件或目录
+Makefile:22: .RebuildObject.d: 没有那个文件或目录
+Makefile:22: .RecordClient.d: 没有那个文件或目录
+Makefile:22: .Rush.d: 没有那个文件或目录
+Makefile:22: .SceneArmy.d: 没有那个文件或目录
+Makefile:22: .SceneCountry.d: 没有那个文件或目录
+Makefile:22: .Scene.d: 没有那个文件或目录
+Makefile:22: .SceneDare.d: 没有那个文件或目录
+Makefile:22: .SceneEntryPk.d: 没有那个文件或目录
+Makefile:22: .SceneManager.d: 没有那个文件或目录
+Makefile:22: .SceneNpcAI.d: 没有那个文件或目录
+Makefile:22: .SceneNpc.d: 没有那个文件或目录
+Makefile:22: .SceneNpcDare.d: 没有那个文件或目录
+Makefile:22: .SceneNpcManager.d: 没有那个文件或目录
+Makefile:22: .ScenePet.d: 没有那个文件或目录
+Makefile:22: .ScenePk.d: 没有那个文件或目录
+Makefile:22: .SceneQuiz.d: 没有那个文件或目录
+Makefile:22: .SceneRelation.d: 没有那个文件或目录
+Makefile:22: .SceneSafety.d: 没有那个文件或目录
+Makefile:22: .SceneSchool.d: 没有那个文件或目录
+Makefile:22: .SceneSept.d: 没有那个文件或目录
+Makefile:22: .SceneSkill.d: 没有那个文件或目录
+Makefile:22: .ScenesServer.d: 没有那个文件或目录
+Makefile:22: .SceneTask.d: 没有那个文件或目录
+Makefile:22: .SceneTaskManager.d: 没有那个文件或目录
+Makefile:22: .SceneUnion.d: 没有那个文件或目录
+Makefile:22: .SceneUser.d: 没有那个文件或目录
+Makefile:22: .SceneUserManager.d: 没有那个文件或目录
+Makefile:22: .script_func.d: 没有那个文件或目录
+Makefile:22: .SessionClient.d: 没有那个文件或目录
+Makefile:22: .Skill.d: 没有那个文件或目录
+Makefile:22: .SkillManager.d: 没有那个文件或目录
+Makefile:22: .SkillStatusManager.d: 没有那个文件或目录
+Makefile:22: .Stock.d: 没有那个文件或目录
+Makefile:22: .Team.d: 没有那个文件或目录
+Makefile:22: .TeamManager.d: 没有那个文件或目录
+Makefile:22: .TimeTick.d: 没有那个文件或目录
+Makefile:22: .Trade.d: 没有那个文件或目录
+Makefile:22: .WayPoint.d: 没有那个文件或目录
+Makefile:22: .zObject.d: 没有那个文件或目录
+Makefile:22: .zSceneEntryIndex.d: 没有那个文件或目录
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from CharInitInfo.cpp:14:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from SceneDefine.h:19,
+                 from SceneNpc.h:15,
+                 from ScenePet.h:14,
+                 from CartoonPet.h:4,
+                 from CartoonPet.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from SceneNpc.h:14,
+                 from ScenePet.h:14,
+                 from CartoonPet.h:4,
+                 from CartoonPet.cpp:1:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Scene.h:17,
+                 from SceneManager.h:4,
+                 from Chat.cpp:4:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from SceneNpc.h:16,
+                 from ScenePet.h:14,
+                 from CartoonPet.h:4,
+                 from CartoonPet.cpp:1:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from zSceneEntryIndex.h:15,
+                 from Scene.h:21,
+                 from SceneManager.h:4,
+                 from Chat.cpp:4:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Scene.h:17,
+                 from SceneManager.h:4,
+                 from CountryAlly.cpp:11:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+Chat.cpp: 在静态成员函数‘static bool Gm::fetch(SceneUser*, const char*)’中:
+Chat.cpp:3117:51: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+  if ("" == prop["id"] && "" == prop["name"].c_str())
+                                                   ^
+Chat.cpp:3140:70: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+   if ((679==atoi(prop["id"].c_str()))||("��ħʯ"==prop["name"].c_str()))
+                                                                      ^
+Chat.cpp:3144:72: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+   if ((682==atoi(prop["id"].c_str()))||("��������"==prop["name"].c_str()))
+                                                                        ^
+Chat.cpp: 在静态成员函数‘static bool Gm::summon(SceneUser*, const char*)’中:
+Chat.cpp:3391:51: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+  if ("" == prop["id"] && "" == prop["name"].c_str())
+                                                   ^
+Chat.cpp: 在静态成员函数‘static bool Gm::bcworld(SceneUser*, const char*)’中:
+Chat.cpp:4778:10: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+  if (""==para)
+          ^
+Chat.cpp: 在静态成员函数‘static bool Gm::bcwgamemsg(SceneUser*, const char*)’中:
+Chat.cpp:4821:10: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+  if (""==para)
+          ^
+Chat.cpp: 在静态成员函数‘static bool Gm::skill(SceneUser*, const char*)’中:
+Chat.cpp:5711:10: 警告：与字面字符串比较的结构是不可预测的 [-Waddress]
+  if (""==para)
+          ^
+In file included from ../base/SessionCommand.h:18:0,
+                 from CountryAlly.h:20,
+                 from CountryAlly.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from SceneUserManager.h:4,
+                 from Scene.h:23,
+                 from SceneManager.h:4,
+                 from Chat.cpp:4:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zTime.h:20:0,
+                 from CountryAlly.h:13,
+                 from CountryAlly.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Scene.h:17,
+                 from SceneManager.h:4,
+                 from CountryDare.cpp:11:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Scene.h:17,
+                 from SceneManager.h:4,
+                 from CountryTech.cpp:11:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/SessionCommand.h:18:0,
+                 from CountryTech.h:20,
+                 from CountryTech.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from zSceneEntryIndex.h:15,
+                 from Scene.h:21,
+                 from SceneManager.h:4,
+                 from CountryDare.cpp:11:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zTime.h:20:0,
+                 from CountryDare.h:13,
+                 from CountryDare.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zTime.h:20:0,
+                 from CountryTech.h:13,
+                 from CountryTech.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Dice.h:4,
+                 from Dice.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Gold.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Dice.h:4,
+                 from Dice.cpp:1:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Gold.cpp:1:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Dice.h:4,
+                 from Dice.cpp:1:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Gold.cpp:1:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from SceneDefine.h:19,
+                 from SceneNpc.h:15,
+                 from ScenePet.h:14,
+                 from GuardNpc.h:13,
+                 from GuardNpc.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from SceneNpc.h:14,
+                 from ScenePet.h:14,
+                 from GuardNpc.h:13,
+                 from GuardNpc.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from Horse.h:18,
+                 from Horse.cpp:11:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from Horse.h:17:0,
+                 from Horse.cpp:11:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from SceneNpc.h:16,
+                 from ScenePet.h:14,
+                 from GuardNpc.h:13,
+                 from GuardNpc.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+In file included from ../base/zTime.h:20:0,
+                 from Horse.h:16,
+                 from Horse.cpp:11:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Leechdom.cpp:12:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from LiveSkill.h:15,
+                 from LiveSkill.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Leechdom.cpp:12:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from LiveSkill.h:15,
+                 from LiveSkill.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Leechdom.cpp:12:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from LiveSkill.h:15,
+                 from LiveSkill.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from LoadMap.cpp:2:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from MagicRange.cpp:13:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from Mask.cpp:12:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from MagicRange.h:19,
+                 from MagicRange.cpp:18:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from Mask.cpp:12:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from MessageSystem.cpp:16:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from MessageSystem.cpp:14:0:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zTime.h:20:0,
+                 from Mask.h:13,
+                 from Mask.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from MessageSystem.cpp:16:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zSocket.h:35,
+                 from ../base/zTCPClient.h:17,
+                 from MiniClient.cpp:13:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/MiniCommand.h:15:0,
+                 from MiniClient.cpp:14:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Scene.h:17,
+                 from MiniGame.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zTime.h:20:0,
+                 from ../base/zSocket.h:36,
+                 from ../base/zTCPClient.h:17,
+                 from MiniClient.cpp:13:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zSceneEntry.h:15:0,
+                 from zSceneEntryIndex.h:15,
+                 from Scene.h:21,
+                 from MiniGame.cpp:1:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from SceneUserManager.h:4,
+                 from Scene.h:23,
+                 from MiniGame.cpp:1:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from NpcTrade.cpp:12:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zDatabase.h:20:0,
+                 from NpcTrade.h:17,
+                 from NpcTrade.cpp:16:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zEntryManager.h:13,
+                 from ObjectManager.h:6,
+                 from ObjectManager.cpp:1:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from ../base/zDatabase.h:19,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Property.cpp:3:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from ObjectManager.cpp:4:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+ObjectManager.cpp: 在成员函数‘bool GlobalObjectIndex::addObject(zObject*)’中:
+ObjectManager.cpp:49:8: 警告：converting ‘false’ to pointer type ‘zObject*’ [-Wconversion-null]
+     ret=false;
+        ^
+In file included from ../base/zDatabase.h:20:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Property.cpp:3:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zEntryManager.h:11:0,
+                 from ObjectManager.h:6,
+                 from ObjectManager.cpp:1:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+Property.cpp: 在成员函数‘bool SceneUser::doPropertyCmd(const Cmd::stPropertyUserCmd*, unsigned int)’中:
+Property.cpp:105:10: 警告：variable ‘notify’ set but not used [-Wunused-but-set-variable]
+     bool notify = false;
+          ^
+Property.cpp:1427:69: 警告：建议在‘&’的操作数中出现的‘+’前后加上括号 [-Wparentheses]
+      this->charbase.goodness = this->charbase.goodness & 0XFFFF0000 + good;
+                                                                     ^
+Property.cpp:1432:145: 警告：不建议使用从字符串常量到‘char*’的转换 [-Wwrite-strings]
+      zObject::logger(0,0,"����ֵ",this->charbase.honor,old_honor - this->charbase.honor,0,this->id,this->name,0,NULL,"ϴPKֵ�۳�����ֵ",NULL,0,0);
+                                                                                                                                                 ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from Property.cpp:3:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Quest.h:17,
+                 from QuestAction.h:15,
+                 from QuestAction.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from Quest.h:14:0,
+                 from QuestAction.h:15,
+                 from QuestAction.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Quest.h:17,
+                 from QuestCondition.h:15,
+                 from QuestCondition.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from Quest.h:14:0,
+                 from QuestCondition.h:15,
+                 from QuestCondition.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from QuestAction.h:19,
+                 from QuestAction.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from QuestCondition.h:19,
+                 from QuestCondition.cpp:10:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from Quest.h:17,
+                 from Quest.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from Quest.h:14:0,
+                 from Quest.cpp:10:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from /usr/local/include/c++/4.9.1/ext/hash_map:60:0,
+                 from ../base/zProperties.h:19,
+                 from ../base/Zebra.h:6,
+                 from QuestEvent.h:13,
+                 from QuestEvent.cpp:10:
+/usr/local/include/c++/4.9.1/backward/backward_warning.h:32:2: 警告：#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from Quest.h:14:0,
+                 from QuestEvent.cpp:12:
+../base/Command.h: 在构造函数‘Cmd::stQueryAuction::stQueryAuction()’中:
+../base/Command.h:8677:9: 警告：大整数隐式截断为无符号类型 [-Woverflow]
+   level = (DWORD)-1;
+         ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from QuestAction.h:19,
+                 from Quest.cpp:14:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::putQueueToArray() [with int QueueSize = 102400]’:
+../base/zMisc.h:351:25:   required from ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:392:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+In file included from ../base/zDatabase.h:15:0,
+                 from ../base/zDatabaseManager.h:11,
+                 from zObject.h:5,
+                 from SceneUser.h:4,
+                 from QuestCondition.h:19,
+                 from QuestEvent.cpp:13:
+../base/zMisc.h: In instantiation of ‘bool MsgQueue<QueueSize>::put(const void*, unsigned int) [with int QueueSize = 102400]’:
+../base/MessageQueue.h:16:49:   required from here
+../base/zMisc.h:356:6: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueWrite’上的运算结果可能是未定义的 [-Wsequence-point]
+      queueWrite = (++queueWrite)%QueueSize;
+      ^
+../base/zMisc.h: In instantiation of ‘void MsgQueue<QueueSize>::erase() [with int QueueSize = 102400]’:
+../base/MessageQueue.h:25:20:   required from here
+../base/zMisc.h:342:5: 警告：‘((MsgQueue<>*)this)->MsgQueue<>::queueRead’上的运算结果可能是未定义的 [-Wsequence-point]
+     queueRead = (++queueRead)%QueueSize;
+     ^
+make[1]: *** [Quest.o] 挂起
+make[1]: *** [QuestEvent.o] 挂起
+make: *** wait: 没有子进程。 停止。
+make: *** 正在等待未完成的任务....
+make: *** wait: 没有子进程。 停止。

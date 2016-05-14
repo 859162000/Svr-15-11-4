@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="858" name="比武岛传送者">
+	<!--new means new quest, default is quest on user-->
+	<quest id="960109">
+		<embranchment id="2">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 2)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="3">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 4)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 5)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="7">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 7)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="8">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 8)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="11">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 11)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="12">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 12)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="14">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 14)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 15)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 17)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 18)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="20">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="21">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 21)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="22">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 22)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="23">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 24)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 25)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 27)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="28">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 28)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="29">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-2两(0)", "v858", 160109, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="30">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Great" value="499"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-5两(0)", "v858", 160109, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="31">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddTaskCmdItem("比武岛-10两(0)", "v858", 160109, 31)
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+
+
+               <embranchment id="32">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？         为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="33">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<nation value="2"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+		<embranchment id="35">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+
+
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="37">
+			<conditions>
+				<nation value="3"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+		<embranchment id="38">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end				
+                            </menu>
+			</actions>
+		</embranchment>
+		<embranchment id="39">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="40">
+			<conditions>
+				<nation value="4"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+		<embranchment id="41">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="42">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="43">
+			<conditions>
+				<nation value="5"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+		<embranchment id="44">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="45">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="46">
+			<conditions>
+				<nation value="7"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+
+
+		<embranchment id="47">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="48">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="49">
+			<conditions>
+				<nation value="8"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+		<embranchment id="50">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="51">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="52">
+			<conditions>
+				<nation value="9"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+
+
+		<embranchment id="53">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="54">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="55">
+			<conditions>
+				<nation value="10"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+		<embranchment id="56">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="57">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="58">
+			<conditions>
+				<nation value="11"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+
+
+
+
+
+
+		<embranchment id="59">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Less" value="200"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-2两(0)", "Dialog97")
+end
+function Dialog97()
+this:AddTalk("对不起，你的钱不够，请凑够2两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Less" value="500"/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-5两(0)", "Dialog98")
+end
+function Dialog98()
+this:AddTalk("对不起，你的钱不够，请凑够5两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="61">
+			<conditions>
+				<nation value="12"/>
+				<gold type="Less" value="1000"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    我是王城的比武岛传送者，你已经准备好去传说中的比武岛了么？        为了比武的公平性，我会把70级以下的人传送到初级比武岛；70级到99级的人传送到中级比武岛;100级以上的人传送到高级比武岛。")
+this:AddDialogItem("比武岛-10两(0)", "Dialog99")
+end
+function Dialog99()
+this:AddTalk("对不起，你的钱不够，请凑够10两再来。");
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="160109" new="1">
+		<embranchment id="2" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="52,100"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="52,100"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="4" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="52,100"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="5" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="51,162"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="51,162"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="7" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="51,162"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="8" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="55,209"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="55,209"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="55,209"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="83,55"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="12" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="83,55"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="83,55"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="14" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="125,53"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="15" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="125,53"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="125,53"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="17" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="86,261"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="18" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="86,261"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="86,261"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="110,265"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="21" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="110,265"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="22" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="110,265"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="149,97"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="24" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="149,97"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="25" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="149,97"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="151,134"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="27" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="151,134"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="28" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="151,134"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="199"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·初级比武岛" pos="153,174"/>
+				<notify content="你被马车载到了比武岛，付了2两作为路费"/>
+				<gold type="Sub" value="200"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<isguard/>
+				<level type="Less" value="100"/>
+				<level type="Great" value="69"/>
+				<gold type="Great" value="499"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·中级比武岛" pos="153,174"/>
+				<notify content="你被马车载到了比武岛，付了5两作为路费"/>
+				<gold type="Sub" value="500"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="31" active="1">
+			<conditions>
+				<isguard/>
+				<gold type="Great" value="999"/>
+				<level type="Great" value="99"/>
+			</conditions>
+			<actions>
+				<goto name="中立区·高级比武岛" pos="153,174"/>
+				<notify content="你被马车载到了比武岛，付了10两作为路费"/>
+				<gold type="Sub" value="1000"/>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

@@ -1,0 +1,5003 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="529" name="王城-伯乐(851,504)">
+	<!--养鸡-->
+	<quest id="31411">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Equal" name="state" value="1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养鸡了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21411, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Equal" name="state" value="2" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养鸡了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21411, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+			    <innation/>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="2" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸡呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 87500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21411, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<innation/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="2" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸡呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 112500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21411, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 112500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 112500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 112500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸡呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 137500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21411, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 137500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 137500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21411"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 137500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21411, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21411" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="87500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="87500"/>
+				<notify1 content="经验+87500"/>
+				<additem value="1" id="2401" odds="5"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="87500"/>
+				<notify1 content="经验+87500"/>
+				<additem value="1" id="2401" odds="3000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="87500"/>
+				<notify1 content="经验+87500"/>
+				<additem value="1" id="2401" odds="5000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="112500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="112500"/>
+				<notify1 content="经验+112500"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="112500"/>
+				<notify1 content="经验+112500"/>
+				<additem value="1" id="2401" odds="3000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="112500"/>
+				<notify1 content="经验+112500"/>
+				<additem value="1" id="2401" odds="5000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="39"/>
+				<level type="Less" value="50"/>
+				<var type="Differ" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="137500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="137500"/>
+				<notify1 content="经验+137500"/>
+				<additem value="1" id="2401" odds="5"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1925" odds="5000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<additem value="1" id="1926" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="137500"/>
+				<notify1 content="经验+137500"/>
+				<additem value="1" id="2401" odds="3000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21411"/>
+				<var type="Differ" name="state" value="1" id="21411"/>
+				<var type="Differ" name="state" value="-1" id="21411"/>
+			</conditions>
+			<actions>
+				<exp value="137500"/>
+				<notify1 content="经验+137500"/>
+				<additem value="1" id="2401" odds="5000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1925" odds="6000"/>
+				<additem value="1" id="1926" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养鸭-->
+	<quest id="31421">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Equal" name="state" value="1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养鸭了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21421, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Equal" name="state" value="2" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养鸭了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21421, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="2" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸭呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 162500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21421, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="2" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸭呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 187500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21421, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 187500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 187500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 187500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养鸭呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 212500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21421, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 212500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 212500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21421"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 212500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21421, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21421" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="162500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="162500"/>
+				<notify1 content="经验+162500"/>
+				<additem value="1" id="2402" odds="5"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="162500"/>
+				<notify1 content="经验+162500"/>
+				<additem value="1" id="2402" odds="3000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="162500"/>
+				<notify1 content="经验+162500"/>
+				<additem value="1" id="2402" odds="5000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="187500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="187500"/>
+				<notify1 content="经验+187500"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="187500"/>
+				<notify1 content="经验+187500"/>
+				<additem value="1" id="2402" odds="3000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="187500"/>
+				<notify1 content="经验+187500"/>
+				<additem value="1" id="2402" odds="5000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="49"/>
+				<level type="Less" value="60"/>
+				<var type="Differ" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="212500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="212500"/>
+				<notify1 content="经验+212500"/>
+				<additem value="1" id="2402" odds="5"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1930" odds="5000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<additem value="1" id="1931" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="212500"/>
+				<notify1 content="经验+212500"/>
+				<additem value="1" id="2402" odds="3000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21421"/>
+				<var type="Differ" name="state" value="1" id="21421"/>
+				<var type="Differ" name="state" value="-1" id="21421"/>
+			</conditions>
+			<actions>
+				<exp value="212500"/>
+				<notify1 content="经验+212500"/>
+				<additem value="1" id="2402" odds="5000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1930" odds="6000"/>
+				<additem value="1" id="1931" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养狗-->
+	<quest id="31431">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Equal" name="state" value="1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养狗了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21431, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Equal" name="state" value="2" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养狗了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21431, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="2" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养狗呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 237600")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21431, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="2" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养狗呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 275010")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21431, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 275010")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 275010")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 275010")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养狗呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 312600")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21431, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 312600")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 312600")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21431"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 312600")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21431, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21431" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="237600"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="237600"/>
+				<notify1 content="经验+237600"/>
+				<additem value="1" id="2403" odds="5"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="237600"/>
+				<notify1 content="经验+237600"/>
+				<additem value="1" id="2403" odds="3000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="237600"/>
+				<notify1 content="经验+237600"/>
+				<additem value="1" id="2403" odds="5000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="275010"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="275010"/>
+				<notify1 content="经验+275010"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="275010"/>
+				<notify1 content="经验+275010"/>
+				<additem value="1" id="2403" odds="3000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="275010"/>
+				<notify1 content="经验+275010"/>
+				<additem value="1" id="2403" odds="5000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="59"/>
+				<level type="Less" value="70"/>
+				<var type="Differ" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="312600"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="312600"/>
+				<notify1 content="经验+312600"/>
+				<additem value="1" id="2403" odds="5"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1970" odds="5000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<additem value="1" id="1978" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="312600"/>
+				<notify1 content="经验+312600"/>
+				<additem value="1" id="2403" odds="3000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21431"/>
+				<var type="Differ" name="state" value="1" id="21431"/>
+				<var type="Differ" name="state" value="-1" id="21431"/>
+			</conditions>
+			<actions>
+				<exp value="312600"/>
+				<notify1 content="经验+312600"/>
+				<additem value="1" id="2403" odds="5000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1970" odds="6000"/>
+				<additem value="1" id="1978" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养牛-->
+	<quest id="31441">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Equal" name="state" value="1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养牛了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21441, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Equal" name="state" value="2" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养牛了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21441, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="2" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养牛呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 325000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21441, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="2" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养牛呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 356000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21441, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 356000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 356000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 356000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养牛呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 377000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21441, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 377000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 377000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21441"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 377000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21441, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21441" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="325000"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="325000"/>
+				<notify1 content="经验+325000"/>
+				<additem value="1" id="2404" odds="5"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="325000"/>
+				<notify1 content="经验+325000"/>
+				<additem value="1" id="2404" odds="3000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="325000"/>
+				<notify1 content="经验+325000"/>
+				<additem value="1" id="2404" odds="5000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="356000"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="356000"/>
+				<notify1 content="经验+356000"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="356000"/>
+				<notify1 content="经验+356000"/>
+				<additem value="1" id="2404" odds="3000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="356000"/>
+				<notify1 content="经验+356000"/>
+				<additem value="1" id="2404" odds="5000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="69"/>
+				<level type="Less" value="80"/>
+				<var type="Differ" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="377000"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="377000"/>
+				<notify1 content="经验+377000"/>
+				<additem value="1" id="2404" odds="5"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1971" odds="5000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<additem value="1" id="1979" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="377000"/>
+				<notify1 content="经验+377000"/>
+				<additem value="1" id="2404" odds="3000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21441"/>
+				<var type="Differ" name="state" value="1" id="21441"/>
+				<var type="Differ" name="state" value="-1" id="21441"/>
+			</conditions>
+			<actions>
+				<exp value="377000"/>
+				<notify1 content="经验+377000"/>
+				<additem value="1" id="2404" odds="5000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1971" odds="6000"/>
+				<additem value="1" id="1979" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养猪-->
+	<quest id="31451">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Equal" name="state" value="1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养猪了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21451, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Equal" name="state" value="2" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养猪了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21451, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="2" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养猪呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 381250")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21451, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="2" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养猪呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 381250")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21451, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 381250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 381250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 381250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+			    <innation/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养猪呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 481250")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21451, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 481250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 481250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21451"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 481250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21451, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21451" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="state" value="-2" id="21451"/>
+				<var type="Set" name="state" value="-2" id="21452"/>
+				<var type="Set" name="state" value="-2" id="21453"/>
+				<var type="Set" name="state" value="-2" id="21454"/>
+				<var type="Set" name="state" value="-2" id="21455"/>
+				<var type="Set" name="state" value="-2" id="21456"/>
+				<var type="Set" name="state" value="-2" id="21457"/>
+				<var type="Set" name="state" value="-2" id="21458"/>
+				<var type="Set" name="state" value="-2" id="21459"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="381250"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1964" odds="5"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1964" odds="3000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1964" odds="5000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="381250"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1964" odds="3000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="381250"/>
+				<notify1 content="经验+381250"/>
+				<additem value="1" id="1964" odds="5000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="79"/>
+				<level type="Less" value="90"/>
+				<var type="Differ" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="481250"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="481250"/>
+				<notify1 content="经验+481250"/>
+				<additem value="1" id="1964" odds="5"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1972" odds="5000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<additem value="1" id="1980" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="481250"/>
+				<notify1 content="经验+481250"/>
+				<additem value="1" id="1964" odds="3000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21451"/>
+				<var type="Differ" name="state" value="1" id="21451"/>
+				<var type="Differ" name="state" value="-1" id="21451"/>
+			</conditions>
+			<actions>
+				<exp value="481250"/>
+				<notify1 content="经验+481250"/>
+				<additem value="1" id="1964" odds="5000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1972" odds="6000"/>
+				<additem value="1" id="1980" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养青蛙-->
+	<quest id="31461">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养青蛙了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21461, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Equal" name="state" value="2" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养青蛙了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21461, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="2" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养青蛙呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 487600")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21461, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="2" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养青蛙呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 526250")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21461, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 526250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 526250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 526250")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养青蛙呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 565000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21461, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 565000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 565000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21461"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 565000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21461, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21461" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="state" value="-2" id="21451"/>
+				<var type="Set" name="state" value="-2" id="21452"/>
+				<var type="Set" name="state" value="-2" id="21453"/>
+				<var type="Set" name="state" value="-2" id="21454"/>
+				<var type="Set" name="state" value="-2" id="21455"/>
+				<var type="Set" name="state" value="-2" id="21456"/>
+				<var type="Set" name="state" value="-2" id="21457"/>
+				<var type="Set" name="state" value="-2" id="21458"/>
+				<var type="Set" name="state" value="-2" id="21459"/>
+				<var type="Set" name="state" value="-2" id="21461"/>
+				<var type="Set" name="state" value="-2" id="21462"/>
+				<var type="Set" name="state" value="-2" id="21463"/>
+				<var type="Set" name="state" value="-2" id="21464"/>
+				<var type="Set" name="state" value="-2" id="21465"/>
+				<var type="Set" name="state" value="-2" id="21466"/>
+				<var type="Set" name="state" value="-2" id="21467"/>
+				<var type="Set" name="state" value="-2" id="21468"/>
+				<var type="Set" name="state" value="-2" id="21469"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="487600"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="487600"/>
+				<notify1 content="经验+487600"/>
+				<additem value="1" id="2405" odds="5"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="487600"/>
+				<notify1 content="经验+487600"/>
+				<additem value="1" id="2405" odds="3000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="487600"/>
+				<notify1 content="经验+487600"/>
+				<additem value="1" id="2405" odds="5000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="526250"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="526250"/>
+				<notify1 content="经验+526250"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="526250"/>
+				<notify1 content="经验+526250"/>
+				<additem value="1" id="2405" odds="3000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="526250"/>
+				<notify1 content="经验+526250"/>
+				<additem value="1" id="2405" odds="5000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="89"/>
+				<level type="Less" value="100"/>
+				<var type="Differ" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="565000"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="565000"/>
+				<notify1 content="经验+565000"/>
+				<additem value="1" id="2405" odds="5"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1973" odds="5000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<additem value="1" id="1981" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="565000"/>
+				<notify1 content="经验+565000"/>
+				<additem value="1" id="2405" odds="3000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21461"/>
+				<var type="Differ" name="state" value="1" id="21461"/>
+				<var type="Differ" name="state" value="-1" id="21461"/>
+			</conditions>
+			<actions>
+				<exp value="565000"/>
+				<notify1 content="经验+565000"/>
+				<additem value="1" id="2405" odds="5000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1973" odds="6000"/>
+				<additem value="1" id="1981" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养蛇-->
+	<quest id="31471">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Equal" name="state" value="1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养蛇了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21471, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Equal" name="state" value="2" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养蛇了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21471, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="2" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养蛇呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 555600")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21471, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="2" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养蛇呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 612500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21471, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 612500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 612500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 612500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养蛇呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 637500")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21471, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 637500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 637500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21471"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 637500")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21471, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21471" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="state" value="-2" id="21451"/>
+				<var type="Set" name="state" value="-2" id="21452"/>
+				<var type="Set" name="state" value="-2" id="21453"/>
+				<var type="Set" name="state" value="-2" id="21454"/>
+				<var type="Set" name="state" value="-2" id="21455"/>
+				<var type="Set" name="state" value="-2" id="21456"/>
+				<var type="Set" name="state" value="-2" id="21457"/>
+				<var type="Set" name="state" value="-2" id="21458"/>
+				<var type="Set" name="state" value="-2" id="21459"/>
+				<var type="Set" name="state" value="-2" id="21461"/>
+				<var type="Set" name="state" value="-2" id="21462"/>
+				<var type="Set" name="state" value="-2" id="21463"/>
+				<var type="Set" name="state" value="-2" id="21464"/>
+				<var type="Set" name="state" value="-2" id="21465"/>
+				<var type="Set" name="state" value="-2" id="21466"/>
+				<var type="Set" name="state" value="-2" id="21467"/>
+				<var type="Set" name="state" value="-2" id="21468"/>
+				<var type="Set" name="state" value="-2" id="21469"/>
+				<var type="Set" name="state" value="-2" id="21471"/>
+				<var type="Set" name="state" value="-2" id="21472"/>
+				<var type="Set" name="state" value="-2" id="21473"/>
+				<var type="Set" name="state" value="-2" id="21474"/>
+				<var type="Set" name="state" value="-2" id="21475"/>
+				<var type="Set" name="state" value="-2" id="21476"/>
+				<var type="Set" name="state" value="-2" id="21477"/>
+				<var type="Set" name="state" value="-2" id="21478"/>
+				<var type="Set" name="state" value="-2" id="21479"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="555600"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="555600"/>
+				<notify1 content="经验+555600"/>
+				<additem value="1" id="2407" odds="5"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="555600"/>
+				<notify1 content="经验+555600"/>
+				<additem value="1" id="2407" odds="3000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="555600"/>
+				<notify1 content="经验+555600"/>
+				<additem value="1" id="2407" odds="5000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="612500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="612500"/>
+				<notify1 content="经验+612500"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="612500"/>
+				<notify1 content="经验+612500"/>
+				<additem value="1" id="2407" odds="3000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="612500"/>
+				<notify1 content="经验+612500"/>
+				<additem value="1" id="2407" odds="5000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="99"/>
+				<level type="Less" value="110"/>
+				<var type="Differ" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<var type="Set" name="exp" value="637500"/>
+				<refresh name="exp"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="637500"/>
+				<notify1 content="经验+637500"/>
+				<additem value="1" id="2407" odds="5"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1974" odds="5000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<additem value="1" id="1982" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="637500"/>
+				<notify1 content="经验+637500"/>
+				<additem value="1" id="2407" odds="3000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21471"/>
+				<var type="Differ" name="state" value="1" id="21471"/>
+				<var type="Differ" name="state" value="-1" id="21471"/>
+			</conditions>
+			<actions>
+				<exp value="637500"/>
+				<notify1 content="经验+637500"/>
+				<additem value="1" id="2407" odds="5000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1974" odds="6000"/>
+				<additem value="1" id="1982" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养马-->
+	<quest id="31481">
+		<embranchment id="3">
+			<conditions>
+				<uservar type="Equal" name="getseed" value="3"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，今天没有什么养殖任务给你了，明天再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="4">
+			<conditions>
+				<level type="Great" value="109"/>
+				<var type="Equal" name="state" value="1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养马了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21481, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="6">
+			<conditions>
+				<level type="Great" value="109"/>
+				<var type="Equal" name="state" value="2" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    你今天不想帮我养马了么？")
+this:AddTaskCmdItem("今天不想养了{10001}", "v529", 21481, 1)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="5">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="2" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养马呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 654000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21481, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="3" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="2" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="16">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Less" name="score" value="7" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="1"/>
+				<var type="Great" name="score" value="6" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 10)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="24">
+			<conditions>
+				<uservar type="Equal" name="seed" value="1"/>
+				<innation/>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养马呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 676000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21481, 13)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="25">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="3" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 676000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 16)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="26">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Less" name="score" value="7" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 676000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 19)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="27">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="2"/>
+				<var type="Great" name="score" value="6" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 676000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 20)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="34">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<innation/>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    年轻人，我正在找人养马呢，如果你有兴趣的话，就去帮帮饲养大叔吧，他太不让我放心了。\n\n经验奖励： 701000")
+this:AddTaskCmdItem("我这就去找他{10001}", "v529", 21481, 23)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="35">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="3" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 701000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 26)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="36">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Less" name="score" value="7" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，养的还不错，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 701000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 29)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="38">
+			<conditions>
+				<space size="3"/>
+				<uservar type="Equal" name="seed" value="3"/>
+				<var type="Great" name="score" value="6" id="21481"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，这次养的很好，为了表示对你劳动的感谢，这些礼物你就收下吧。\n\n经验奖励： 701000")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 30)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="60">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    嗯，因为遭灾了，这次养的不是很好，为了表示对你劳动的感谢，这些礼物你就收下吧。")
+this:AddTaskCmdItem("接受礼物{10001}", "v529", 21481, 6)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="99">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    请把包裹空出三格以上再来交任务。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="21481" new="1">
+		<embranchment id="1" active="1">
+			<conditions>
+				<level type="Great" value="109"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="state" value="-2" id="21451"/>
+				<var type="Set" name="state" value="-2" id="21452"/>
+				<var type="Set" name="state" value="-2" id="21453"/>
+				<var type="Set" name="state" value="-2" id="21454"/>
+				<var type="Set" name="state" value="-2" id="21455"/>
+				<var type="Set" name="state" value="-2" id="21456"/>
+				<var type="Set" name="state" value="-2" id="21457"/>
+				<var type="Set" name="state" value="-2" id="21458"/>
+				<var type="Set" name="state" value="-2" id="21459"/>
+				<var type="Set" name="state" value="-2" id="21461"/>
+				<var type="Set" name="state" value="-2" id="21462"/>
+				<var type="Set" name="state" value="-2" id="21463"/>
+				<var type="Set" name="state" value="-2" id="21464"/>
+				<var type="Set" name="state" value="-2" id="21465"/>
+				<var type="Set" name="state" value="-2" id="21466"/>
+				<var type="Set" name="state" value="-2" id="21467"/>
+				<var type="Set" name="state" value="-2" id="21468"/>
+				<var type="Set" name="state" value="-2" id="21469"/>
+				<var type="Set" name="state" value="-2" id="21471"/>
+				<var type="Set" name="state" value="-2" id="21472"/>
+				<var type="Set" name="state" value="-2" id="21473"/>
+				<var type="Set" name="state" value="-2" id="21474"/>
+				<var type="Set" name="state" value="-2" id="21475"/>
+				<var type="Set" name="state" value="-2" id="21476"/>
+				<var type="Set" name="state" value="-2" id="21477"/>
+				<var type="Set" name="state" value="-2" id="21478"/>
+				<var type="Set" name="state" value="-2" id="21479"/>
+				<var type="Set" name="state" value="-2" id="21481"/>
+				<var type="Set" name="state" value="-2" id="21482"/>
+				<var type="Set" name="state" value="-2" id="21483"/>
+				<var type="Set" name="state" value="-2" id="21484"/>
+				<var type="Set" name="state" value="-2" id="21485"/>
+				<var type="Set" name="state" value="-2" id="21486"/>
+				<var type="Set" name="state" value="-2" id="21487"/>
+				<var type="Set" name="state" value="-2" id="21488"/>
+				<var type="Set" name="state" value="-2" id="21489"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="3"/>
+				<uservar type="Set" name="seed" value="3"/>
+				<notify1 content="取消今日养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="3" active="1">
+			<conditions>
+				<uservar type="Less" name="seed" value="1"/>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Set" name="seed" value="1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="60"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="1"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="5"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="3000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="10" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="5000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Set" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13" active="1">
+			<conditions>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="60"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="2"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="selflevel"/>
+				<refresh name="state"/>
+			</actions>
+		</embranchment>
+		<embranchment id="16" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="3000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="20" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="5000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="23" active="1">
+			<conditions>
+				<uservar type="Equal" name="seed" value="2"/>
+				<level type="Great" value="109"/>
+				<var type="Differ" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify1 content="去找饲养大叔"/>
+				<uservar type="Add" name="seed" value="1"/>
+				<var type="GetP" name="selflevel" value="1"/>
+				<vars type="Mul" name1="selflevel" name2="selflevel"/>
+				<var type="Set" name="baseexp" value="60"/>
+				<var type="Set" name="selflevel2" value="1"/>
+				<var type="Set" name="div" value="100"/>
+				<vars type="Mul" name1="selflevel" name2="baseexp"/>
+				<vars type="Mul" name1="selflevel2" name2="selflevel"/>
+				<var type="Set" name="stupid" value="75"/>
+				<vars type="Mul" name1="selflevel" name2="stupid"/>
+				<vars type="Div" name1="selflevel" name2="div"/>
+				<var type="Set" name="time" value="2"/>
+				<var type="Set" name="verystupid" value="25"/>
+				<vars type="Mul" name1="verystupid" name2="time"/>
+				<vars type="Mul" name1="selflevel2" name2="verystupid"/>
+				<vars type="Div" name1="selflevel2" name2="div"/>
+				<vars type="Add" name1="selflevel" name2="selflevel2"/>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="selflevel"/>
+			</actions>
+		</embranchment>
+		<embranchment id="26" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="5"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1975" odds="5000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<additem value="1" id="1983" odds="6000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="29" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="3000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+		<embranchment id="30" active="1">
+			<conditions>
+				<space size="3"/>
+				<var type="Equal" name="state" value="-3" id="21481"/>
+				<var type="Differ" name="state" value="1" id="21481"/>
+				<var type="Differ" name="state" value="-1" id="21481"/>
+			</conditions>
+			<actions>
+				<exp value="100" id="21481" name="selflevel"/>
+				<notify content="增加了经验"/>
+				<additem value="1" id="2408" odds="5000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1975" odds="6000"/>
+				<additem value="1" id="1983" odds="4000"/>
+				<var type="Set" name="state" value="-2"/>
+				<var type="Set" name="seed" value="0"/>
+				<var type="Set" name="score" value="0"/>
+				<uservar type="Add" name="getseed" value="1"/>
+				<notify1 content="完成养殖任务"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<!--养乌龟-->
+	<!--养鸟-->
+</event>

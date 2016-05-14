@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) 16(竞技区) 128摆摊区域-->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+		<point x="65" y="212"/>
+		<point x="65" y="213"/>
+		<point x="65" y="214"/>
+		<point x="65" y="215"/>
+		<point x="65" y="216"/>
+		<point x="66" y="212"/>
+		<point x="66" y="213"/>
+		<point x="66" y="214"/>
+		<point x="66" y="215"/>
+		<point x="66" y="216"/>
+		<point x="65" y="212"/>
+		<point x="65" y="213"/>
+		<point x="65" y="214"/>
+		<point x="65" y="215"/>
+		<point x="65" y="216"/>
+		<point x="66" y="212"/>
+		<point x="66" y="213"/>
+		<point x="66" y="214"/>
+		<point x="66" y="215"/>
+		<point x="66" y="216"/>
+		<point x="65" y="212"/>
+		<point x="65" y="213"/>
+		<point x="65" y="214"/>
+		<point x="65" y="215"/>
+		<point x="65" y="216"/>
+		<point x="66" y="212"/>
+		<point x="66" y="213"/>
+		<point x="66" y="214"/>
+		<point x="66" y="215"/>
+		<point x="66" y="216"/>
+		<dest name="wangmu4" country="6" x="156" y="51"/>
+		<dest name="wangmu4" country="6" x="157" y="51"/>
+		<dest name="wangmu4" country="6" x="158" y="51"/>
+		<dest name="wangmu4" country="6" x="159" y="51"/>
+		<dest name="wangmu4" country="6" x="160" y="51"/>
+		<dest name="wangmu4" country="6" x="161" y="51"/>
+		<dest name="wangmu4" country="6" x="162" y="51"/>
+		<dest name="wangmu4" country="6" x="163" y="51"/>
+		<dest name="wangmu4" country="6" x="156" y="51"/>
+		<dest name="wangmu4" country="6" x="157" y="51"/>
+		<dest name="wangmu4" country="6" x="158" y="51"/>
+		<dest name="wangmu4" country="6" x="159" y="51"/>
+		<dest name="wangmu4" country="6" x="160" y="51"/>
+		<dest name="wangmu4" country="6" x="161" y="51"/>
+		<dest name="wangmu4" country="6" x="162" y="51"/>
+		<dest name="wangmu4" country="6" x="163" y="51"/>
+		<dest name="wangmu4" country="6" x="156" y="51"/>
+		<dest name="wangmu4" country="6" x="157" y="51"/>
+		<dest name="wangmu4" country="6" x="158" y="51"/>
+		<dest name="wangmu4" country="6" x="159" y="51"/>
+		<dest name="wangmu4" country="6" x="160" y="51"/>
+		<dest name="wangmu4" country="6" x="161" y="51"/>
+		<dest name="wangmu4" country="6" x="162" y="51"/>
+		<dest name="wangmu4" country="6" x="163" y="51"/>
+		<dest name="wangmu4" country="6" x="156" y="51"/>
+		<dest name="wangmu4" country="6" x="157" y="51"/>
+		<dest name="wangmu4" country="6" x="158" y="51"/>
+		<dest name="wangmu4" country="6" x="159" y="51"/>
+		<dest name="wangmu4" country="6" x="160" y="51"/>
+		<dest name="wangmu4" country="6" x="161" y="51"/>
+	</waypoint>
+	<waypoint>
+		<point x="214" y="39"/>
+		<point x="214" y="40"/>
+		<point x="214" y="41"/>
+		<point x="214" y="42"/>
+		<point x="214" y="43"/>
+		<point x="213" y="39"/>
+		<point x="213" y="40"/>
+		<point x="213" y="41"/>
+		<point x="213" y="42"/>
+		<point x="213" y="43"/>
+		<point x="214" y="39"/>
+		<point x="214" y="40"/>
+		<point x="214" y="41"/>
+		<point x="214" y="42"/>
+		<point x="214" y="43"/>
+		<point x="213" y="39"/>
+		<point x="213" y="40"/>
+		<point x="213" y="41"/>
+		<point x="213" y="42"/>
+		<point x="213" y="43"/>
+		<dest name="wangmu6" country="6" x="216" y="184"/>
+		<dest name="wangmu6" country="6" x="216" y="185"/>
+		<dest name="wangmu6" country="6" x="216" y="186"/>
+		<dest name="wangmu6" country="6" x="216" y="187"/>
+		<dest name="wangmu6" country="6" x="216" y="188"/>
+		<dest name="wangmu6" country="6" x="216" y="189"/>
+		<dest name="wangmu6" country="6" x="216" y="190"/>
+		<dest name="wangmu6" country="6" x="216" y="191"/>
+		<dest name="wangmu6" country="6" x="216" y="192"/>
+		<dest name="wangmu6" country="6" x="216" y="193"/>
+		<dest name="wangmu6" country="6" x="216" y="194"/>
+		<dest name="wangmu6" country="6" x="216" y="195"/>
+		<dest name="wangmu6" country="6" x="216" y="184"/>
+		<dest name="wangmu6" country="6" x="216" y="185"/>
+		<dest name="wangmu6" country="6" x="216" y="186"/>
+		<dest name="wangmu6" country="6" x="216" y="187"/>
+		<dest name="wangmu6" country="6" x="216" y="188"/>
+		<dest name="wangmu6" country="6" x="216" y="189"/>
+		<dest name="wangmu6" country="6" x="216" y="190"/>
+		<dest name="wangmu6" country="6" x="216" y="191"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<npc id="16526" name="魔化犬戎" width="52" height="48" x="57" y="159" num="70" interval="10" color="0,255,0,0"/>
+	<npc id="16526" name="魔化犬戎" width="46" height="59" x="102" y="27" num="110" interval="10" color="0,255,0,0"/>
+	<npc id="16526" name="魔化犬戎" width="84" height="86" x="110" y="195" num="120" interval="10" color="0,255,0,0"/>
+	<npc id="16529" name="骸骨士兵" width="49" height="83" x="108" y="105" num="110" interval="10" color="0,255,0,0"/>
+	<npc id="16529" name="骸骨士兵" width="44" height="78" x="179" y="13" num="85" interval="10" color="0,255,0,0"/>
+	<npc id="16529" name="骸骨士兵" width="68" height="90" x="195" y="99" num="150" interval="10" color="0,255,0,0"/>
+	<npc id="16524" name="兽化犬戎(魔)" width="178" height="217" x="74" y="57" num="30" interval="10" color="0,255,0,0"/>
+	<npc id="16525" name="狂化犬戎" width="178" height="217" x="74" y="57" num="30" interval="10" color="0,255,0,0"/>
+	<npc id="16527" name="骸骨巫师(魔)" width="178" height="217" x="74" y="57" num="30" interval="10" color="0,255,0,0"/>
+	<npc id="16528" name="骸骨弓手" width="178" height="217" x="74" y="57" num="30" interval="10" color="0,255,0,0"/>
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="223" height="285" x="45" y="9" type="2" color="0,255,0,0"/>
+</map>

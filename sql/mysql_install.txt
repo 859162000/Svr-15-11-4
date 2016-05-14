@@ -1,0 +1,60 @@
+#!/bin/bash
+
+#首先确定你是root用户
+
+#根据体统类型选择编译方式
+#i386体系结构的
+CFLAGS="-O3 -mcpu=pentiumpro" CXX=gcc CXXFLAGS="-O3 -mcpu=pentiumpro -felide-constructors -fno-exceptions -fno-rtti" ./configure --with-raid --enable-thread-safe-client --enable-assembler  --with-server-suffix =" for >>>MySQL Database of Zebra by Yhc<<<" --without-debug --with-extra-charsets=none --without-isam --disable-shared --with-mysqld-ldflags=-all-static --prefix=/usr/local/mysql --without-bench
+#64位系统，x86_64
+CFLAGS="-O3 -m64" CXX=gcc CXXFLAGS="-O3 -m64 -felide-constructors -fno-exceptions -fno-rtti" ./configure --with-raid --enable-thread-safe-client --enable-assembler  --with-server-suffix =" for >>>MySQL Database of Zebra by Yhc<<<" --without-debug --with-extra-charsets=none --without-isam --disable-shared --with-mysqld-ldflags=-all-static --prefix=/usr/local/mysql --without-bench
+
+#然后根据CPU数量进行编译
+make -j 4 && make install
+
+#添加用户
+groupadd mysql && useradd -g mysql mysql
+
+#创建目录
+mkdir /usr/local/mysql/data && mkdir /usr/local/mysql/run && mkdir /usr/local/mysql/log && mkdir /usr/local/mysql/var
+
+#更改mysql目录所有者
+chgrp mysql -R /usr/local/mysql && chown mysql -R /usr/local/mysql
+
+#增加打开文件数量
+ulimit -n 2048
+
+#添加PATH
+echo "PATH=\"/usr/local/mysql/bin:\$PATH\"" >> /etc/profile && export PATH="/usr/local/mysql/bin:$PATH"
+
+#strip可执行文件
+strip /usr/local/mysql/libexec/mysqld
+
+#添加LIB PATH
+echo "/usr/local/mysql/lib" >> /etc/ld.so.conf && ldconfig
+
+#将my.cnf文件cp到/etc目录下
+#cp ../my.cnf /etc
+#初始化Mysql表
+su - mysql -c "mysql_install_db"
+
+#启动服务器
+su - mysql -c "mysqld_safe --skip-name-resolve --open-files-limit=2048&"
+#mysqld_safe --log_bin=OFF&
+
+#创建数据库和用户
+/usr/local/mysql/bin/mysql -uroot -e "create database Zebra;"
+/usr/local/mysql/bin/mysql -uroot -e "grant all on Zebra.* to Zebra@'%' identified by 'Zebra' with grant option;"
+
+/usr/local/mysql/bin/mysql -uroot -e "create database SuperServer;"
+/usr/local/mysql/bin/mysql -uroot -e "grant all on SuperServer.* to Zebra@'%' identified by 'Zebra' with grant option;"
+
+/usr/local/mysql/bin/mysql -uroot -e "create database LoginServer;"
+/usr/local/mysql/bin/mysql -uroot -e "grant all on LoginServer.* to Zebra@'%' identified by 'Zebra' with grant option;"
+
+/usr/local/mysql/bin/mysql -uroot -e "create database RecordServer;"
+/usr/local/mysql/bin/mysql -uroot -e "grant all on RecordServer.* to Zebra@'%' identified by 'Zebra' with grant option;"
+
+/usr/local/mysql/bin/mysql -uroot -e "create database AccountServer;"
+/usr/local/mysql/bin/mysql -uroot -e "grant all on AccountServer.* to Zebra@'%' identified by 'Zebra' with grant option;"
+
+

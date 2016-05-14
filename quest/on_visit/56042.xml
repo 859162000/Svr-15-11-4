@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="56042" name="凤凰城-黄大人(184,364)">
+	<!--new means new quest, default is quest on user-->
+	<quest id="30600">
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="20600"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("完成任务：汇报(2)", "Dialog21")
+end
+function Dialog21()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;汇报\n \n&lt;/n&gt;&lt;n&gt;    啊？雷老虎的女儿也失踪啦？这件事情很蹊跷。\n \n&lt;/n&gt;&lt;/p&gt; &lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 5000&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem(" 跑的好累~~~。{10002}", "v56042", 20600, 3)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20600" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="20600"/>
+			</conditions>
+			<actions>
+				<exp value="5000"/>
+				<notify1 content="经验+5000"/>
+				<notify content="恭喜你完成了“汇报”任务"/>
+				<var type="Set" name="state" value="-1" id="20600"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="30601">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="20600"/>
+				<var type="Differ" name="state" value="-3" id="20601"/>
+				<var type="Differ" name="state" value="-1" id="20601"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：授命(2)", "Dialog22")
+end
+function Dialog22()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务：&lt;/n&gt;&lt;n&gt;授命\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;  把黄大人的命令传达给衙役(276,303) \n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    你去告诉衙役，我要他立刻查办此事。\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 5200&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("我这就去。{10001}", "v56042", 20601, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20601" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="20600"/>
+				<var type="Differ" name="state" value="-3" id="20601"/>
+				<var type="Differ" name="state" value="-1" id="20601"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3"/>
+				<refresh name="state"/>
+				<notify content="任务：把黄大人的命令传达给衙役(276,303)。"/>
+				<notify1 content="去找衙役(276,303)。"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10284">
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="284"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("完成任务：乱世重典(2)", "Dialog23")
+end
+function Dialog23()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;乱世重典\n \n&lt;/n&gt;&lt;n&gt;  你是说我的律法太过仁慈吗？可是，仁慈乃圣人之道，我们一直如此。\n \n&lt;/n&gt;&lt;/p&gt; &lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 3200&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("现在治安可好？{10002}", "v56042", 284, 11)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="284" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="284"/>
+			</conditions>
+			<actions>
+				<exp value="3200"/>
+				<notify1 content="经验+3200"/>
+				<notify content="恭喜你完成了“乱世重典”任务"/>
+				<var type="Set" name="state" value="-1" id="284"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10285">
+		<embranchment id="8">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="284"/>
+				<var type="Differ" name="state" value="-1" id="285"/>
+				<var type="Differ" name="state" value="1" id="285"/>
+				<var type="Differ" name="state" value="-3" id="285"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：平乱(2)", "Dialog24")
+end
+function Dialog24()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;任务：&lt;/n&gt;&lt;n&gt;平乱\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去杀死40个土匪(117,62)，然后再回到黄大人(184,364)处汇报。\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    现今天下大乱，土匪横行，不管怎样抓捕，总是不能长治久安。你能帮我教化那些土匪吗？\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 12200&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("我不会教化，但能斩杀他们，杀鸡儆猴。{10001}", "v56042", 285, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="17">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="285"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：平乱(2)", "Dialog25")
+end
+function Dialog25()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;平乱?\n \n&lt;/n&gt;&lt;n&gt;   啊，你斩杀了众多土匪！治安果然好多了。&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 12200&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("对犯罪的人就该这样。{10002}", "v56042", 285, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="18">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="285"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：平乱(2)", "Dialog26")
+end
+function Dialog26()
+this:AddTalk("怎么又回来了，你不是说惩治那些土匪吗？快去吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="285" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="284"/>
+				<var type="Differ" name="state" value="-1" id="285"/>
+				<var type="Differ" name="state" value="1" id="285"/>
+				<var type="Differ" name="state" value="-3" id="285"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<notify content="任务：去消灭40个土匪(117,62)"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="285"/>
+			</conditions>
+			<actions>
+				<exp value="12200"/>
+				<notify1 content="经验+12200"/>
+				<notify content="恭喜你完成了“平乱”任务"/>
+				<var type="Set" name="state" value="-1" id="285"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10286">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="285"/>
+				<var type="Differ" name="state" value="-3" id="286"/>
+				<var type="Differ" name="state" value="-1" id="286"/>
+				<var type="Differ" name="state" value="1" id="286"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：仁义之乱(2)", "Dialog27")
+end
+function Dialog27()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务：&lt;/n&gt;&lt;n&gt;仁义之乱\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去牢笼问犯人(189,473)为何频频犯罪\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    (GetName)，为何我对百姓如此宽厚，却还有这么多的人去当土匪？为何你斩杀他们，就再也不敢有人犯罪了，我心中困惑。\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务奖励：\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"666\"&gt;   记忆蝴蝶&lt;/object&gt; \n&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 4800&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("我帮你去牢中问问犯人。{10001}", "v56042", 286, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+			   <space size="1"/>
+				<var type="Equal" name="state" value="-3" id="286"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：仁义之乱(2)", "Dialog28")
+end
+function Dialog28()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;汇报\n \n&lt;/n&gt;&lt;n&gt;    事情果然像你预料的那样啊，唯今之计只有变法。对推行新法你有何良策？\n       \n&lt;/n&gt;&lt;/p&gt; &lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;任务奖励：\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;object id=\"666\"&gt;   记忆蝴蝶&lt;/object&gt; \n&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 4800&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("不如实行辕门立木之法。{10001}", "v56042", 286, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="286"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddDialogItem("任务：仁义之乱(2)", "Dialog34")
+end
+function Dialog34()
+this:AddTalk("    你包裹满了，清空些再来吧。")
+this:AddCloseItem("离开")
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="286" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="285"/>
+				<var type="Differ" name="state" value="-3" id="286"/>
+				<var type="Differ" name="state" value="-1" id="286"/>
+				<var type="Differ" name="state" value="1" id="286"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify content="任务：去牢笼找犯人(189,473)"/>
+				<notify1 content="牢笼(189,473)"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+			   <space size="1"/>
+				<var type="Equal" name="state" value="-3" id="286"/>
+			</conditions>
+			<actions>
+                                <additem value="1" id="666"/> 
+				<notify1 content="获得记忆蝴蝶一个"/>
+				<notify content="获得记忆蝴蝶一个"/>
+				<exp value="4800"/>
+				<notify1 content="经验+4800"/>
+				<notify content="恭喜你完成了“仁义之乱”任务"/>
+				<var type="Set" name="state" value="-1" id="286"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10287">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="286"/>
+				<var type="Differ" name="state" value="-1" id="287"/>
+				<var type="Differ" name="state" value="1" id="287"/>
+				<var type="Differ" name="state" value="-3" id="287"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：虎头(2)", "Dialog29")
+end
+function Dialog29()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;任务：&lt;/n&gt;&lt;n&gt;虎头\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去兽王谷杀老虎(66,14)收集10个虎头，然后回来报告黄大人 (184,364)。\n \n&lt;/n&gt;&lt;n color=\"255,239,196,0\"&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    真是好计！为了推行新法，需要先立威。我要悬赏虎头10个，赏银1000锭，请你帮我去城外打10个虎头。\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 12600&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("好的，我这便去{10001}", "v56042", 287, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="9">
+			<conditions>
+				<item value="10" id="2098"/>
+				<var type="Equal" name="state" value="-3" id="287"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：虎头(2)", "Dialog30")
+end
+function Dialog30()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;虎头\n \n&lt;/n&gt;&lt;n&gt;   真不错，你已经帮我收集到了10个虎头，真是帮了我的大忙啊\n&lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 12600&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("这个嘛，小菜一碟{10002}", "v56042", 287, 6)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+		<embranchment id="19">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="287"/>
+				<var type="Equal" name="state" value="1" id="289"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddTalk("    虎头掉了？我这里还有呢，快去拿给高俅。")
+this:AddTaskCmdItem("这次不会掉了{10002}", "v56042", 287, 11)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="287" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="286"/>
+				<var type="Differ" name="state" value="-1" id="287"/>
+				<var type="Differ" name="state" value="1" id="287"/>
+				<var type="Differ" name="state" value="-3" id="287"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<notify content="杀老虎取10块虎头"/>
+				<notify1 content="去收集10块虎头"/>
+				<notify content="任务：去兽王谷(66,14)杀老虎，把收集的10个虎头后找黄大人(184,364)"/>
+			</actions>
+		</embranchment>
+		<embranchment id="6" active="1">
+			<conditions>
+				<item value="10" id="2098"/>
+				<var type="Equal" name="state" value="-3" id="287"/>
+			</conditions>
+			<actions>
+				<exp value="12600"/>
+				<notify1 content="经验+12600"/>
+				<notify content="恭喜你完成了“虎头”任务"/>
+				<var type="Set" name="state" value="-1" id="287"/>
+			</actions>
+		</embranchment>
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="287"/>
+				<var type="Equal" name="state" value="1" id="289"/>
+			</conditions>
+			<actions>
+				<additem value="10" id="2098"/>
+				<notify1 content="得到10个虎头"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10289">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="287"/>
+				<var type="Differ" name="state" value="-3" id="289"/>
+				<var type="Differ" name="state" value="-1" id="289"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：民意(2)", "Dialog31")
+end
+function Dialog31()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务：&lt;/n&gt;&lt;n&gt;民意\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    把虎头带给高俅(280,272),然后回来向黄大人(184,364)汇报。\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    接下来要找个人领赏就可以了，找谁呢？\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 3000&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("找城里的无赖高俅{10001}", "v56042", 289, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="289"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("完成任务：民意(2)", "Dialog32")
+end
+function Dialog32()
+this:AddTalk("&lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;完成任务：&lt;/n&gt;&lt;n&gt;无效的药\n \n&lt;/n&gt;&lt;n&gt;    他已经来领过奖赏了，果然不出所料，他在城里到处炫耀呢，这样新法推行人民就会相信了。\n    这都多亏了你的辕门立木之策啊。\n \n&lt;/n&gt;&lt;/p&gt; &lt;p&gt;&lt;n color=\"255,239,196,0\"&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 3000&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("接下来就看效果了{10001}", "v56042", 289, 9)
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="289" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="287"/>
+				<var type="Differ" name="state" value="-3" id="289"/>
+				<var type="Differ" name="state" value="-1" id="289"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="1"/>
+				<refresh name="state"/>
+				<notify content="任务：把虎头带给高俅(280,272)，然后回来向黄大人报告。"/>
+				<notify1 content="高俅(280,272)"/>
+			</actions>
+		</embranchment>
+		<embranchment id="9" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-3" id="289"/>
+			</conditions>
+			<actions>
+				<exp value="3000"/>
+				<notify1 content="经验+3000"/>
+				<notify content="恭喜你完成了“民意”任务"/>
+				<var type="Set" name="state" value="-1" id="289"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="10290">
+		<embranchment id="5">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="289"/>
+				<var type="Differ" name="state" value="-3" id="290"/>
+				<var type="Differ" name="state" value="-1" id="290"/>
+			</conditions>
+			<actions>
+				<menu>
+function TaskDialog()
+this:AddDialogItem("任务：感谢(2)", "Dialog33")
+end
+function Dialog33()
+this:AddTalk("&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务：&lt;/n&gt;&lt;n&gt; 感谢\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务目标：\n&lt;/n&gt;&lt;n&gt;    去找韩非 (294,396)\n \n&lt;/n&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;任务描述：\n&lt;/n&gt;&lt;n&gt;    谢谢你的帮忙。现今治安大大提高，百姓路不拾遗，夜不闭户！\n &lt;/n&gt;&lt;/p&gt;&lt;p&gt;&lt;n color=\&quot;255,239,196,0\&quot;&gt;经验奖励：&lt;/n&gt;&lt;n&gt; 3400&lt;/n&gt;&lt;/p&gt;")
+this:AddTaskCmdItem("变法果然效果很好{10001}", "v56042", 290, 3)
+end
+				</menu>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="290" new="1">
+		<embranchment id="3" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="-1" id="289"/>
+				<var type="Differ" name="state" value="-3" id="290"/>
+				<var type="Differ" name="state" value="-1" id="290"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state" value="-3"/>
+				<refresh name="state"/>
+				<notify content="任务：去回报韩非(294,396)"/>
+				<notify1 content="韩非(294,396)"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

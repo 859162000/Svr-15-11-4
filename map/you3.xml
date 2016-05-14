@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的 -->
+	<waypoint>
+		<point x="168" y="11"/>
+		<point x="168" y="12"/>
+		<point x="168" y="13"/>
+		<point x="168" y="14"/>
+		<point x="168" y="12"/>
+		<point x="167" y="12"/>
+		<point x="167" y="13"/>
+		<point x="167" y="14"/>
+		<point x="167" y="15"/>
+		<dest name="you2" country="6" x="148" y="324"/>
+		<dest name="you2" country="6" x="149" y="324"/>
+		<dest name="you2" country="6" x="150" y="324"/>
+		<dest name="you2" country="6" x="151" y="324"/>
+		<dest name="you2" country="6" x="148" y="324"/>
+		<dest name="you2" country="6" x="149" y="324"/>
+		<dest name="you2" country="6" x="150" y="324"/>
+		<dest name="you2" country="6" x="151" y="324"/>
+		<dest name="you2" country="6" x="152" y="324"/>
+	</waypoint>
+	<waypoint>
+		<point x="33" y="230"/>
+		<point x="33" y="231"/>
+		<point x="33" y="232"/>
+		<point x="34" y="230"/>
+		<point x="34" y="231"/>
+		<point x="34" y="232"/>
+		<point x="33" y="230"/>
+		<point x="33" y="231"/>
+		<point x="33" y="232"/>
+		<point x="34" y="230"/>
+		<point x="34" y="231"/>
+		<point x="34" y="232"/>
+		<point x="34" y="233"/>
+		<dest name="you4" country="6" x="247" y="104"/>
+		<dest name="you4" country="6" x="247" y="105"/>
+		<dest name="you4" country="6" x="247" y="106"/>
+		<dest name="you4" country="6" x="247" y="107"/>
+		<dest name="you4" country="6" x="247" y="108"/>
+		<dest name="you4" country="6" x="247" y="109"/>
+		<dest name="you4" country="6" x="247" y="110"/>
+		<dest name="you4" country="6" x="247" y="111"/>
+		<dest name="you4" country="6" x="247" y="112"/>
+		<dest name="you4" country="6" x="247" y="113"/>
+		<dest name="you4" country="6" x="247" y="114"/>
+		<dest name="you4" country="6" x="247" y="115"/>
+		<dest name="you4" country="6" x="247" y="116"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="16" height="25" x="159" y="2" type="2" color="0,0,255,0"/>
+	<zonedef width="20" height="22" x="26" y="216" type="2" color="0,0,255,0"/>
+	<npc id="473" name="子产" width="1" height="1" x="126" y="196" num="1" interval="20"/>
+	<npc id="474" name="毛遂" width="1" height="1" x="195" y="130" num="1" interval="20"/>
+	<npc id="475" name="邹忌" width="1" height="1" x="257" y="249" num="1" interval="20"/>
+	<npc id="21224" name="血爪僵尸(魔)" width="330" height="178" x="5" y="37" num="1" interval="7200"/>
+	<npc id="55186 " name="草" width="330" height="178" x="5" y="37" num="8" interval="1800"/>
+	<npc id="55105 " name="草" width="330" height="178" x="5" y="37" num="8" interval="1800"/>
+	<npc id="55186 " name="草" width="330" height="178" x="5" y="37" num="8" interval="1800"/>
+	<npc id="55105 " name="草" width="330" height="178" x="5" y="37" num="8" interval="1800"/>
+	<npc id="55221" name="草" width="330" height="178" x="5" y="37" num="4" interval="1800"/>
+	<npc id="55141" name="草" width="255" height="127" x="49" y="216" num="2" interval="1800"/>
+	<npc id="55161" name="草" width="255" height="127" x="49" y="216" num="2" interval="1800"/>
+	<npc id="55181" name="草" width="255" height="127" x="49" y="216" num="2" interval="1800"/>
+	<npc id="55201" name="草" width="255" height="127" x="49" y="216" num="2" interval="1800"/>
+	<npc id="55221" name="草" width="255" height="127" x="49" y="216" num="2" interval="1800"/>
+	<npc id="16386" name="劈头僵尸" width="33" height="36" x="17" y="109" num="15" interval="40"/>
+	<npc id="16386" name="劈头僵尸" width="58" height="66" x="66" y="196" num="30" interval="40"/>
+	<npc id="16389" name="僵尸" width="25" height="44" x="160" y="194" num="15" interval="40"/>
+	<npc id="16388" name="骷髅" width="57" height="51" x="127" y="294" num="20" interval="40"/>
+	<npc id="16388" name="僵尸" width="42" height="43" x="254" y="227" num="15" interval="40"/>
+	<npc id="16390" name="骷髅" width="22" height="28" x="293" y="106" num="10" interval="30"/>
+	<npc id="16389" name="僵尸" width="28" height="37" x="122" y="112" num="10" interval="40"/>
+	<npc id="16390" name="骷髅" width="28" height="37" x="208" y="177" num="15" interval="40"/>
+	<npc id="16386" name="劈头僵尸" width="33" height="36" x="17" y="109" num="15" interval="40"/>
+	<npc id="16386" name="劈头僵尸" width="58" height="66" x="65" y="193" num="30" interval="40"/>
+	<npc id="16389" name="僵尸" width="25" height="44" x="160" y="194" num="15" interval="40"/>
+	<npc id="16388" name="骷髅" width="57" height="51" x="126" y="296" num="20" interval="40"/>
+	<npc id="16388" name="僵尸" width="42" height="43" x="252" y="227" num="15" interval="40"/>
+	<npc id="16390" name="骷髅" width="22" height="28" x="291" y="106" num="10" interval="40"/>
+	<npc id="16389" name="僵尸" width="28" height="37" x="119" y="115" num="10" interval="40"/>
+	<npc id="16390" name="骷髅" width="28" height="37" x="206" y="182" num="15" interval="40"/>
+	<npc id="16385" name="血爪僵尸(魔)" width="330" height="178" x="5" y="37" num="40" interval="90"/>
+	<npc id="16386" name="劈头僵尸" width="330" height="178" x="5" y="37" num="80" interval="90"/>
+	<npc id="16387" name="骷髅弓手" width="330" height="178" x="5" y="37" num="40" interval="90"/>
+	<npc id="16388" name="碎骨骷髅(魔)" width="330" height="178" x="5" y="37" num="20" interval="90"/>
+	<npc id="16389" name="僵尸" width="330" height="178" x="5" y="37" num="80" interval="90"/>
+	<npc id="16390" name="骷髅" width="330" height="178" x="5" y="37" num="30" interval="90"/>
+	<npc id="16385" name="血爪僵尸(魔)" width="255" height="127" x="49" y="216" num="10" interval="90"/>
+	<npc id="16386" name="劈头僵尸" width="255" height="127" x="49" y="216" num="30" interval="90"/>
+	<npc id="16387" name="骷髅弓手" width="255" height="127" x="49" y="216" num="10" interval="90"/>
+	<npc id="16388" name="碎骨骷髅(魔)" width="255" height="127" x="49" y="216" num="40" interval="90"/>
+	<npc id="16389" name="僵尸" width="255" height="127" x="49" y="216" num="20" interval="90"/>
+	<npc id="16390" name="骷髅" width="255" height="127" x="49" y="216" num="2" interval="90"/>
+</map>

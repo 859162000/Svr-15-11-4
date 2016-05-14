@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by wt (zt) -->
+<event id="5006" name=" 皇城-杂货商">
+	<!--new means new quest, default is quest on user-->
+	<quest id="30368">
+		<embranchment id="10">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="20368"/>
+			</conditions>
+			<actions>
+				<menu> 
+function TaskDialog()
+this:AddTalk("    哦哦，慎篱要的纸啊！你拿去吧。")
+this:AddTaskCmdItem("那我就拿走了{10002}", "v56003", 20368, 11)
+end
+				</menu>
+				<var type="Set" name="state" value="-2"/>
+			</actions>
+		</embranchment>
+	</quest>
+	<quest id="20368" new="1">
+		<embranchment id="11" active="1">
+			<conditions>
+				<var type="Equal" name="state" value="1" id="20368"/>
+			</conditions>
+			<actions>
+				<addguard id="54016" map="王城" ltpos="909,472" rbpos="914,480" gold="0" exp="0" dest="392,197"/>
+				<notify content="回王城去找慎篱(451,225)"/>
+				<var type="Set" name="state" value="-3" id="20368"/>
+			</actions>
+		</embranchment>
+	</quest>
+</event>

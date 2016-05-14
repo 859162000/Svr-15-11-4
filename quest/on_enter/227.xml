@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by 1 (1) -->
+<event id="1" name="初始">
+	<!--new means new quest, default is quest on user-->
+	<quest id="2" new="1">
+		<embranchment id="10">
+			<conditions>
+				<var type="Differ" name="state" value="-1"/>
+				<var type="Differ" name="state" value="1"/>
+			</conditions>
+			<actions>
+				<mainmenu> 
+function MainDialog()
+this:AddTalk("    欢迎你来到征途世界，希望你能愉快的进行我们的游戏。如果你想接受新手辅导，请去找村长(181,287)。\n\n    按“L”键可以查询任务列表。\n\n    鼠标左键点击任务列表里有下划线的文字，可实现自动寻路。");
+this:AddCloseItem("离开")
+end
+function MoveCanClose()
+	return false
+end
+this:AddDialog("MainDialog")
+         </mainmenu>
+				<notify content="请去找村长(181,287)"/>
+				<var type="Set" name="state" value="1"/>
+			</actions>
+		</embranchment>
+		<embranchment id="13">
+			<conditions>
+				<var type="Differ" name="state" value="-1"/>
+				<var type="Differ" name="state2" value="2"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state2" value="2"/>
+			<!--<var type="Set" name="state" value="-2" id="20101"/>
+				<var type="Set" name="state" value="-2" id="20102"/>
+				<var type="Set" name="state" value="-2" id="20103"/>
+				<var type="Set" name="state" value="-2" id="20104"/>
+				<var type="Set" name="state" value="-2" id="20105"/>
+				<var type="Set" name="state" value="-2" id="20106"/>
+				<var type="Set" name="state" value="-2" id="20107"/>
+				<var type="Set" name="state" value="-2" id="20108"/>
+				<var type="Set" name="state" value="-2" id="20109"/>
+				<var type="Set" name="state" value="-2" id="20110"/>-->
+
+			</actions>
+		</embranchment>
+		<embranchment id="15">
+			<conditions>
+				<var type="Differ" name="state3" value="1"/>
+			</conditions>
+			<actions>
+				<var type="Set" name="state3" value="1"/>
+				<!--<var type="Set" name="state" value="-2" id="21201"/>
+				<var type="Set" name="state" value="-2" id="21202"/>
+				<var type="Set" name="state" value="-2" id="21203"/>
+				<var type="Set" name="state" value="-2" id="21204"/>
+				<var type="Set" name="state" value="-2" id="21205"/>
+				<var type="Set" name="state" value="-2" id="21206"/>
+				<var type="Set" name="state" value="-2" id="21207"/>
+				<var type="Set" name="state" value="-2" id="21208"/>
+				<var type="Set" name="state" value="-2" id="21209"/>
+				<var type="Set" name="state" value="-2" id="21211"/>
+				<var type="Set" name="state" value="-2" id="21212"/>
+				<var type="Set" name="state" value="-2" id="21213"/>
+				<var type="Set" name="state" value="-2" id="21214"/>
+				<var type="Set" name="state" value="-2" id="21215"/>
+				<var type="Set" name="state" value="-2" id="21216"/>
+				<var type="Set" name="state" value="-2" id="21217"/>
+				<var type="Set" name="state" value="-2" id="21218"/>
+				<var type="Set" name="state" value="-2" id="21219"/>
+				<var type="Set" name="state" value="-2" id="21221"/>
+				<var type="Set" name="state" value="-2" id="21222"/>
+				<var type="Set" name="state" value="-2" id="21223"/>
+				<var type="Set" name="state" value="-2" id="21224"/>
+				<var type="Set" name="state" value="-2" id="21225"/>
+				<var type="Set" name="state" value="-2" id="21226"/>
+				<var type="Set" name="state" value="-2" id="21227"/>
+				<var type="Set" name="state" value="-2" id="21228"/>
+				<var type="Set" name="state" value="-2" id="21229"/>
+				<var type="Set" name="state" value="-2" id="21231"/>
+				<var type="Set" name="state" value="-2" id="21232"/>
+				<var type="Set" name="state" value="-2" id="21233"/>
+				<var type="Set" name="state" value="-2" id="21234"/>
+				<var type="Set" name="state" value="-2" id="21235"/>
+				<var type="Set" name="state" value="-2" id="21236"/>
+				<var type="Set" name="state" value="-2" id="21237"/>
+				<var type="Set" name="state" value="-2" id="21238"/>
+				<var type="Set" name="state" value="-2" id="21239"/>
+				<var type="Set" name="state" value="-2" id="21241"/>
+				<var type="Set" name="state" value="-2" id="21242"/>
+				<var type="Set" name="state" value="-2" id="21243"/>
+				<var type="Set" name="state" value="-2" id="21244"/>
+				<var type="Set" name="state" value="-2" id="21245"/>
+				<var type="Set" name="state" value="-2" id="21246"/>
+				<var type="Set" name="state" value="-2" id="21247"/>
+				<var type="Set" name="state" value="-2" id="21248"/>
+				<var type="Set" name="state" value="-2" id="21249"/>
+				<var type="Set" name="state" value="-2" id="21251"/>
+				<var type="Set" name="state" value="-2" id="21252"/>
+				<var type="Set" name="state" value="-2" id="21253"/>
+				<var type="Set" name="state" value="-2" id="21254"/>
+				<var type="Set" name="state" value="-2" id="21255"/>
+				<var type="Set" name="state" value="-2" id="21256"/>
+				<var type="Set" name="state" value="-2" id="21257"/>
+				<var type="Set" name="state" value="-2" id="21258"/>
+				<var type="Set" name="state" value="-2" id="21259"/>
+				<var type="Set" name="state" value="-2" id="21261"/>
+				<var type="Set" name="state" value="-2" id="21262"/>
+				<var type="Set" name="state" value="-2" id="21263"/>
+				<var type="Set" name="state" value="-2" id="21264"/>
+				<var type="Set" name="state" value="-2" id="21265"/>
+				<var type="Set" name="state" value="-2" id="21266"/>
+				<var type="Set" name="state" value="-2" id="21267"/>
+				<var type="Set" name="state" value="-2" id="21268"/>
+				<var type="Set" name="state" value="-2" id="21269"/>
+				<var type="Set" name="state" value="-2" id="21271"/>
+				<var type="Set" name="state" value="-2" id="21272"/>
+				<var type="Set" name="state" value="-2" id="21273"/>
+				<var type="Set" name="state" value="-2" id="21274"/>
+				<var type="Set" name="state" value="-2" id="21275"/>
+				<var type="Set" name="state" value="-2" id="21276"/>
+				<var type="Set" name="state" value="-2" id="21277"/>
+				<var type="Set" name="state" value="-2" id="21278"/>
+				<var type="Set" name="state" value="-2" id="21279"/>
+				<var type="Set" name="state" value="-2" id="21281"/>
+				<var type="Set" name="state" value="-2" id="21282"/>
+				<var type="Set" name="state" value="-2" id="21283"/>
+				<var type="Set" name="state" value="-2" id="21284"/>
+				<var type="Set" name="state" value="-2" id="21285"/>
+				<var type="Set" name="state" value="-2" id="21286"/>
+				<var type="Set" name="state" value="-2" id="21287"/>
+				<var type="Set" name="state" value="-2" id="21288"/>
+				<var type="Set" name="state" value="-2" id="21289"/>
+				<var type="Set" name="state" value="-2" id="21411"/>
+				<var type="Set" name="state" value="-2" id="21412"/>
+				<var type="Set" name="state" value="-2" id="21413"/>
+				<var type="Set" name="state" value="-2" id="21414"/>
+				<var type="Set" name="state" value="-2" id="21415"/>
+				<var type="Set" name="state" value="-2" id="21416"/>
+				<var type="Set" name="state" value="-2" id="21417"/>
+				<var type="Set" name="state" value="-2" id="21418"/>
+				<var type="Set" name="state" value="-2" id="21419"/>
+				<var type="Set" name="state" value="-2" id="21421"/>
+				<var type="Set" name="state" value="-2" id="21422"/>
+				<var type="Set" name="state" value="-2" id="21423"/>
+				<var type="Set" name="state" value="-2" id="21424"/>
+				<var type="Set" name="state" value="-2" id="21425"/>
+				<var type="Set" name="state" value="-2" id="21426"/>
+				<var type="Set" name="state" value="-2" id="21427"/>
+				<var type="Set" name="state" value="-2" id="21428"/>
+				<var type="Set" name="state" value="-2" id="21429"/>
+				<var type="Set" name="state" value="-2" id="21431"/>
+				<var type="Set" name="state" value="-2" id="21432"/>
+				<var type="Set" name="state" value="-2" id="21433"/>
+				<var type="Set" name="state" value="-2" id="21434"/>
+				<var type="Set" name="state" value="-2" id="21435"/>
+				<var type="Set" name="state" value="-2" id="21436"/>
+				<var type="Set" name="state" value="-2" id="21437"/>
+				<var type="Set" name="state" value="-2" id="21438"/>
+				<var type="Set" name="state" value="-2" id="21439"/>
+				<var type="Set" name="state" value="-2" id="21441"/>
+				<var type="Set" name="state" value="-2" id="21442"/>
+				<var type="Set" name="state" value="-2" id="21443"/>
+				<var type="Set" name="state" value="-2" id="21444"/>
+				<var type="Set" name="state" value="-2" id="21445"/>
+				<var type="Set" name="state" value="-2" id="21446"/>
+				<var type="Set" name="state" value="-2" id="21447"/>
+				<var type="Set" name="state" value="-2" id="21448"/>
+				<var type="Set" name="state" value="-2" id="21449"/>
+				<var type="Set" name="state" value="-2" id="21451"/>
+				<var type="Set" name="state" value="-2" id="21452"/>
+				<var type="Set" name="state" value="-2" id="21453"/>
+				<var type="Set" name="state" value="-2" id="21454"/>
+				<var type="Set" name="state" value="-2" id="21455"/>
+				<var type="Set" name="state" value="-2" id="21456"/>
+				<var type="Set" name="state" value="-2" id="21457"/>
+				<var type="Set" name="state" value="-2" id="21458"/>
+				<var type="Set" name="state" value="-2" id="21459"/>
+				<var type="Set" name="state" value="-2" id="21461"/>
+				<var type="Set" name="state" value="-2" id="21462"/>
+				<var type="Set" name="state" value="-2" id="21463"/>
+				<var type="Set" name="state" value="-2" id="21464"/>
+				<var type="Set" name="state" value="-2" id="21465"/>
+				<var type="Set" name="state" value="-2" id="21466"/>
+				<var type="Set" name="state" value="-2" id="21467"/>
+				<var type="Set" name="state" value="-2" id="21468"/>
+				<var type="Set" name="state" value="-2" id="21469"/>
+				<var type="Set" name="state" value="-2" id="21471"/>
+				<var type="Set" name="state" value="-2" id="21472"/>
+				<var type="Set" name="state" value="-2" id="21473"/>
+				<var type="Set" name="state" value="-2" id="21474"/>
+				<var type="Set" name="state" value="-2" id="21475"/>
+				<var type="Set" name="state" value="-2" id="21476"/>
+				<var type="Set" name="state" value="-2" id="21477"/>
+				<var type="Set" name="state" value="-2" id="21478"/>
+				<var type="Set" name="state" value="-2" id="21479"/>
+				<var type="Set" name="state" value="-2" id="21481"/>
+				<var type="Set" name="state" value="-2" id="21482"/>
+				<var type="Set" name="state" value="-2" id="21483"/>
+				<var type="Set" name="state" value="-2" id="21484"/>
+				<var type="Set" name="state" value="-2" id="21485"/>
+				<var type="Set" name="state" value="-2" id="21486"/>
+				<var type="Set" name="state" value="-2" id="21487"/>
+				<var type="Set" name="state" value="-2" id="21488"/>
+				<var type="Set" name="state" value="-2" id="21489"/>-->
+			</actions>
+		</embranchment>
+	</quest>
+</event>

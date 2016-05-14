@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2005 sp2 U (http://www.altova.com) by any (Ru-Board) -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by xiao (xiao) -->
+<map>
+	<!-- 区域类型定义，x和y分别指定区域左上角的坐标，width和height分别指定区域宽和高 -->
+	<!-- type指定区域的类型，类型包括1(pk安全区)、2(绝对安全区)、4(死亡重生区)、8(新手出生区) -->
+	<!-- initstate表示区域初始属性是否是隐藏的，如果是隐藏状态区域是暂时无效的  country:0表示本国 非0表示指定国家-->
+	<waypoint>
+		<point x="14" y="260"/>
+		<point x="14" y="261"/>
+		<point x="14" y="262"/>
+		<point x="14" y="263"/>
+		<point x="14" y="264"/>
+		<point x="14" y="265"/>
+		<point x="14" y="266"/>
+		<point x="14" y="268"/>
+		<point x="14" y="267"/>
+		<point x="14" y="269"/>
+		<point x="14" y="270"/>
+		<point x="14" y="271"/>
+		<point x="14" y="272"/>
+		<point x="14" y="273"/>
+		<point x="14" y="274"/>
+		<point x="15" y="260"/>
+		<point x="15" y="261"/>
+		<point x="15" y="262"/>
+		<point x="15" y="263"/>
+		<point x="15" y="264"/>
+		<point x="15" y="265"/>
+		<point x="15" y="266"/>
+		<point x="15" y="268"/>
+		<point x="15" y="267"/>
+		<point x="15" y="269"/>
+		<point x="15" y="270"/>
+		<point x="15" y="271"/>
+		<point x="15" y="272"/>
+		<point x="15" y="273"/>
+		<point x="15" y="274"/>
+		<dest name="shouwanggu" country="0" x="182" y="18"/>
+		<dest name="shouwanggu" country="0" x="183" y="18"/>
+		<dest name="shouwanggu" country="0" x="184" y="18"/>
+		<dest name="shouwanggu" country="0" x="185" y="18"/>
+		<dest name="shouwanggu" country="0" x="186" y="18"/>
+		<dest name="shouwanggu" country="0" x="187" y="18"/>
+		<dest name="shouwanggu" country="0" x="188" y="18"/>
+		<dest name="shouwanggu" country="0" x="189" y="18"/>
+		<dest name="shouwanggu" country="0" x="190" y="18"/>
+		<dest name="shouwanggu" country="0" x="191" y="18"/>
+		<dest name="shouwanggu" country="0" x="192" y="18"/>
+		<dest name="shouwanggu" country="0" x="182" y="18"/>
+		<dest name="shouwanggu" country="0" x="183" y="18"/>
+		<dest name="shouwanggu" country="0" x="184" y="18"/>
+		<dest name="shouwanggu" country="0" x="185" y="18"/>
+		<dest name="shouwanggu" country="0" x="186" y="18"/>
+		<dest name="shouwanggu" country="0" x="187" y="18"/>
+		<dest name="shouwanggu" country="0" x="188" y="18"/>
+		<dest name="shouwanggu" country="0" x="189" y="18"/>
+		<dest name="shouwanggu" country="0" x="190" y="18"/>
+		<dest name="shouwanggu" country="0" x="191" y="18"/>
+		<dest name="shouwanggu" country="0" x="192" y="18"/>
+		<dest name="shouwanggu" country="0" x="182" y="18"/>
+		<dest name="shouwanggu" country="0" x="183" y="18"/>
+		<dest name="shouwanggu" country="0" x="184" y="18"/>
+		<dest name="shouwanggu" country="0" x="185" y="18"/>
+		<dest name="shouwanggu" country="0" x="186" y="18"/>
+		<dest name="shouwanggu" country="0" x="187" y="18"/>
+		<dest name="shouwanggu" country="0" x="188" y="18"/>
+		<dest name="shouwanggu" country="0" x="189" y="18"/>
+	</waypoint>
+	<waypoint>
+		<point x="285" y="221"/>
+		<point x="285" y="222"/>
+		<point x="285" y="223"/>
+		<point x="285" y="224"/>
+		<point x="285" y="225"/>
+		<point x="285" y="226"/>
+		<point x="285" y="227"/>
+		<point x="285" y="228"/>
+		<point x="285" y="229"/>
+		<point x="285" y="230"/>
+		<point x="285" y="231"/>
+		<point x="285" y="232"/>
+		<point x="285" y="233"/>
+		<point x="285" y="234"/>
+		<point x="285" y="235"/>
+		<point x="285" y="236"/>
+		<point x="285" y="237"/>
+		<point x="285" y="238"/>
+		<point x="285" y="239"/>
+		<point x="285" y="240"/>
+		<point x="285" y="241"/>
+		<point x="285" y="242"/>
+		<point x="285" y="243"/>
+		<point x="285" y="244"/>
+		<point x="284" y="221"/>
+		<point x="284" y="222"/>
+		<point x="284" y="223"/>
+		<point x="284" y="224"/>
+		<point x="284" y="225"/>
+		<point x="284" y="226"/>
+		<point x="284" y="227"/>
+		<point x="284" y="228"/>
+		<point x="284" y="229"/>
+		<point x="284" y="230"/>
+		<point x="284" y="231"/>
+		<point x="284" y="232"/>
+		<point x="284" y="233"/>
+		<point x="284" y="234"/>
+		<point x="284" y="235"/>
+		<point x="284" y="236"/>
+		<point x="284" y="237"/>
+		<point x="284" y="238"/>
+		<point x="284" y="239"/>
+		<point x="284" y="240"/>
+		<point x="284" y="241"/>
+		<point x="284" y="242"/>
+		<point x="284" y="243"/>
+		<point x="284" y="244"/>
+		<point x="284" y="245"/>
+		<point x="283" y="223"/>
+		<point x="283" y="224"/>
+		<point x="283" y="225"/>
+		<point x="283" y="226"/>
+		<point x="283" y="227"/>
+		<point x="283" y="228"/>
+		<point x="283" y="229"/>
+		<point x="283" y="230"/>
+		<point x="283" y="231"/>
+		<point x="283" y="232"/>
+		<point x="283" y="233"/>
+		<point x="283" y="234"/>
+		<point x="283" y="235"/>
+		<point x="283" y="236"/>
+		<point x="283" y="237"/>
+		<point x="283" y="238"/>
+		<point x="283" y="239"/>
+		<point x="283" y="240"/>
+		<point x="283" y="241"/>
+		<point x="283" y="242"/>
+		<point x="283" y="243"/>
+		<point x="283" y="244"/>
+		<point x="283" y="245"/>
+		<point x="283" y="246"/>
+		<dest name="fenghuangcheng-main" country="0" x="307" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="318" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="319" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="307" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="318" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="318" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="319" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="307" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="318" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="319" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="318" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="319" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="307" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="308" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="309" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="310" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="311" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="312" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="313" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="314" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="315" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="316" y="729"/>
+		<dest name="fenghuangcheng-main" country="0" x="317" y="729"/>
+	</waypoint>
+	<!-- Npc定义，x和y分别指定Npc区域左上角的坐标，width和height分别指定Npc区域宽和高 -->
+	<!-- num指定这个区域内包含的Npc数量，interval指定Npc死亡重生间隔时间 -->
+	<!-- initstate表示Npc初始属性是否是隐藏的 -->
+	<zonedef width="24" height="31" x="10" y="244" type="1" color="0,0,255,0"/>
+	<zonedef width="24" height="31" x="269" y="218" type="1" color="0,0,255,0"/>
+	<npc id="541" name="凤凰城方向" width="1" height="1" x="273" y="236" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="544" name="兽王谷方向" width="1" height="1" x="25" y="253" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="505" name="方大玉" width="1" height="1" x="268" y="280" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="510" name="牢" width="1" height="1" x="231" y="233" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="502" name="灵猴" width="1" height="1" x="228" y="175" num="1" interval="1800" color="0,255,0,0"/>
+	<npc id="55183" name="草类" width="143" height="259" x="41" y="18" num="7" interval="1200" color="0,255,0,0"/>
+	<npc id="55103" name="草类" width="143" height="259" x="40" y="17" num="6" interval="1200" color="0,255,0,0"/>
+	<npc id="55183" name="草类" width="143" height="258" x="41" y="19" num="6" interval="1200" color="0,255,0,0"/>
+	<npc id="55103" name="草类" width="143" height="259" x="40" y="16" num="7" interval="1200" color="0,255,0,0"/>
+	<npc id="3010" name="狼王" width="143" height="259" x="42" y="20" num="1" interval="10800" color="0,255,0,0"/>
+	<npc id="15001" name="偷猎者（魔）" width="10" height="18" x="169" y="208" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="73" height="74" x="205" y="91" num="12" interval="30" color="0,255,0,0"/>
+	<npc id="15003" name="毒蝎子（魔）" width="71" height="77" x="208" y="78" num="3" interval="50" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="71" height="77" x="208" y="78" num="3" interval="50" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="42" height="56" x="165" y="43" num="1" interval="40" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="26" height="35" x="174" y="52" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="10" height="23" x="163" y="67" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="43" height="16" x="123" y="17" num="1" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="11" height="20" x="142" y="50" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="12" height="23" x="119" y="39" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="20" height="20" x="169" y="131" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15002" name="棕狼" width="21" height="25" x="167" y="88" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="20" height="20" x="169" y="111" num="1" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="20" height="24" x="133" y="79" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="10" height="20" x="121" y="64" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="49" height="35" x="83" y="77" num="8" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="10" height="20" x="108" y="36" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="10" height="20" x="95" y="34" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="35" height="45" x="53" y="38" num="4" interval="30" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="49" height="43" x="33" y="88" num="10" interval="30" color="0,255,0,0"/>
+	<npc id="15009" name="巨蛇（魔）" width="11" height="37" x="44" y="105" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="16" height="20" x="13" y="119" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="17" height="22" x="4" y="138" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15009" name="巨蛇（魔）" width="23" height="68" x="16" y="160" num="3" interval="40" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="13" height="47" x="155" y="85" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="15" height="26" x="152" y="128" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="57" height="38" x="129" y="143" num="15" interval="30" color="0,255,0,0"/>
+	<npc id="15002" name="棕狼" width="25" height="23" x="116" y="178" num="6" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="28" height="22" x="102" y="143" num="6" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="30" height="22" x="84" y="129" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="34" height="26" x="92" y="188" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15008" name="血狐狸" width="14" height="23" x="69" y="139" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15007" name="血翼鸟（魔）" width="24" height="31" x="69" y="164" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15009" name="蛇（魔）" width="16" height="22" x="52" y="154" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="12" height="28" x="59" y="178" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="14" height="30" x="102" y="244" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="13" height="29" x="89" y="223" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="12" height="28" x="77" y="218" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="12" height="21" x="64" y="211" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15009" name="巨蛇（魔）" width="45" height="35" x="64" y="233" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="17" height="30" x="41" y="205" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="10" height="17" x="25" y="115" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="8" height="11" x="38" y="182" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="21" height="83" x="23" y="137" num="10" interval="25" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="12" height="10" x="46" y="195" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15009" name="蛇（魔）" width="12" height="44" x="54" y="201" num="2" interval="20" color="0,255,0,0"/>
+	<npc id="15010" name="食人狼" width="8" height="19" x="55" y="213" num="4" interval="20" color="0,255,0,0"/>
+	<npc id="15003" name="毒蝎子（魔）" width="21" height="29" x="206" y="172" num="8" interval="30" color="0,255,0,0"/>
+	<npc id="15001" name="偷猎者（魔）" width="17" height="23" x="147" y="226" num="6" interval="20" color="0,255,0,0"/>
+	<npc id="15001" name="偷猎者（魔）" width="16" height="21" x="157" y="212" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15001" name="偷猎者（魔）" width="17" height="15" x="173" y="202" num="6" interval="20" color="0,255,0,0"/>
+	<npc id="15005" name="偷猎弓手" width="10" height="25" x="194" y="215" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15005" name="偷猎弓手" width="13" height="22" x="170" y="239" num="3" interval="20" color="0,255,0,0"/>
+	<npc id="15005" name="偷猎弓手" width="12" height="22" x="159" y="240" num="8" interval="20" color="0,255,0,0"/>
+	<npc id="15005" name="偷猎弓手" width="20" height="22" x="178" y="231" num="10" interval="20" color="0,255,0,0"/>
+	<npc id="15003" name="毒蝎子（魔）" width="16" height="41" x="206" y="203" num="8" interval="20" color="0,255,0,0"/>
+	<npc id="15003" name="毒蝎子（魔）" width="30" height="23" x="220" y="180" num="12" interval="35" color="0,255,0,0"/>
+	<npc id="15003" name="毒蝎子（魔）" width="18" height="27" x="246" y="174" num="5" interval="20" color="0,255,0,0"/>
+	<npc id="15002" name="棕狼" width="161" height="136" x="60" y="46" num="18" interval="20" color="0,255,0,0"/>
+	<npc id="16611" name="棕狼" width="30" height="40" x="220" y="202" num="15" interval="30" color="0,255,0,0"/>
+	<npc id="16612" name="血狐" width="27" height="38" x="223" y="235" num="15" interval="40" color="0,255,0,0"/>
+	<npc id="16611" name="棕狼" width="32" height="33" x="180" y="218" num="8" interval="20" color="0,255,0,0"/>
+	<npc id="16612" name="血狐" width="32" height="33" x="180" y="218" num="8" interval="20" color="0,255,0,0"/>
+</map>
